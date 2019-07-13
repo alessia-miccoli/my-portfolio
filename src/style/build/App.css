@@ -168,7 +168,7 @@ a {
 #contacts {
   background-color: #D4EEF2;
   border-radius: 0.25rem;
-  box-shadow: 0 0 2pt 3pt #D4EEF2;
+  box-shadow: 0 0 1pt 1pt #D4EEF2;
   padding: 1em;
 }
 
@@ -211,6 +211,10 @@ a {
   font-size: x-large;
 }
 
+.alert {
+  margin: 2%;
+}
+
 #footer {
   margin: 0;
   color: #17a2b8;
@@ -218,7 +222,7 @@ a {
 
 input:focus,
 textarea:focus {
-  box-shadow: 0 0 2pt 2pt #17a2b8 !important;
+  box-shadow: 0 0 1pt 1pt #17a2b8 !important;
 }
 
 .articles li a {
@@ -250,11 +254,19 @@ h2, h3 {
   border: none !important;
 }
 
-#separator {
+#separator,
+hr.separator2 {
   margin: 2%;
   border-top: none;
   height: 1px;
+}
+
+#separator {
   background-image: linear-gradient(to right, transparent, #17a2b8, transparent);
+}
+
+hr.separator2 {
+  background-image: linear-gradient(to right, transparent, #D4EEF2, transparent) !important;
 }
 
 .nav-item a.text-info:hover,

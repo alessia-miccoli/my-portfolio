@@ -9,8 +9,8 @@ class Panel extends React.Component{
         return (
         <div className="panel">
             <p className="project-name">{this.props.name}</p>
-            <button className="btn btn-info"><a href={this.props.projectUrl} target="_blank">Go to Project</a></button>
-            <button className="btn btn-info"><a href={this.props.codeUrl} target="_blank">Go to Code</a></button>
+            <button className="btn btn-info"><a href={this.props.projectUrl} target="_blank" rel="noopener noreferrer">Go to Project</a></button>
+            <button className="btn btn-info"><a href={this.props.codeUrl} target="_blank" rel="noopener noreferrer">Go to Code</a></button>
         </div>);
     }
 }

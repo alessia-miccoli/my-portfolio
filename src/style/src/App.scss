@@ -174,7 +174,7 @@ a{
 #contacts{
   background-color: $light;
   border-radius: .25rem;
-  box-shadow: 0 0 2pt 3pt $light;
+  box-shadow: 0 0 1pt 1pt $light;
   padding: 1em;
 }
 
@@ -219,6 +219,9 @@ a{
   font-size: x-large;
 }
 
+.alert{
+  margin: 2%;
+}
 
 #footer{
   margin: 0;
@@ -227,9 +230,8 @@ a{
 
 input:focus, 
 textarea:focus{
-  box-shadow: 0 0 2pt 2pt $text-info!important;
+  box-shadow: 0 0 1pt 1pt $text-info!important;
 }
-
 
 .articles li a{
   color: $light!important;
@@ -238,8 +240,6 @@ textarea:focus{
 .articles li a:hover{
   color: $text-info!important;
 }
-
-
 
 .ul{
  display: flex;
@@ -262,11 +262,19 @@ h2, h3{
   border:none!important;
 }
 
-#separator{
+#separator, 
+hr.separator2{
   margin: 2%;
   border-top: none;
   height: 1px;
+}
+
+#separator{
   background-image: linear-gradient(to right, transparent, $text-info, transparent);
+}
+
+hr.separator2{
+  background-image: linear-gradient(to right, transparent, $light, transparent)!important;
 }
 
 .nav-item a.text-info:hover,

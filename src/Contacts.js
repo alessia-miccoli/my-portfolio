@@ -9,20 +9,27 @@ class Contacts extends React.Component{
         return (
         <div>
             <h3 id="form" className="text-center">Would you like to get in touch?</h3>
-            <form id="contacts" className="container">
+            <form id="contacts" className="container" onSubmit={this.props.formSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Your Name</label>
-                    <input type="name" name="name" className="form-control" id="name" placeholder="Name"/>
+                    <input type="name" name="name" className="form-control" id="name" placeholder="Name" required/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="email">Your e-mail address</label>
-                    <input type="email" name="email" className="form-control" id="email" placeholder="name@example.com"/>
+                    <input type="email" name="email" className="form-control" id="email" placeholder="name@example.com" required/>
                 </div>
                 <div className="form-group">
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" className="form-control" id="message" rows="3"></textarea>
+                    <textarea name="message" className="form-control" id="message" rows="3" required></textarea>
                 </div>
                 <button type="submit" className="btn btn-info">Submit</button>
+                {this.props.thankYouMessageVisibility && <div className="alert alert-success" role="alert">
+                    Thanks! I've received your message, I'll get back to you asap. <span>🙂</span>
+                </div>}
+                {this.props.errorMessageVisibility && <div className="alert alert-danger" role="alert">
+                    I'm sorry! I'm having troubles getting your message... <span>😕</span><br/>
+                    please consider mailing me directly at miccoli.alessia@hotmail.com
+                </div>}
             </form>
         </div>);
     }

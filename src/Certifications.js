@@ -6,7 +6,7 @@ class Certifications extends React.Component{
     }
 
     render(){
-        var certifications = Object.keys(this.props.data.certifications).map(x =>  <li className="list-group-item"><a href={this.props.data.certifications[x]} target="_blank"><i className="fab fa-free-code-camp"> </i>{x}</a></li>);
+        var certifications = Object.keys(this.props.data.certifications).map(x =>  <li className="list-group-item"><a href={this.props.data.certifications[x]} target="_blank" rel="noopener noreferrer"><i className="fab fa-free-code-camp"> </i>{x}</a></li>);
         return (
         <div>
             <h3 id="certifications" className="text-center">List of my certifications</h3>
