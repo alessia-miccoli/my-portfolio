@@ -242,6 +242,12 @@ textarea:focus {
   font-family: "Inconsolata", monospace;
 }
 
+#spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .lead {
   font-weight: 500 !important;
 }

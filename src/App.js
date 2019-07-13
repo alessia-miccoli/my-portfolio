@@ -16,10 +16,34 @@ class App extends React.Component{
     super(props);
 
     this.state = {
-      data : data
+      data : data,
+      name : "",
+      email : "",
+      message : ""
     }
 
     this.formSubmit = this.formSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event){
+    switch(event.target.name){
+      case "name":
+          this.setState({
+            name : event.target.value
+          });
+        break;
+      case "email": 
+        this.setState({
+          email : event.target.value
+        });
+        break;
+      case "message":
+        this.setState({
+          message : event.target.value
+        });
+        break;
+    }
   }
 
   formSubmit(event){
@@ -27,19 +51,26 @@ class App extends React.Component{
 
       var templateParams = {
         to_name: 'Alessia',
-        name: event.target.name.value,
-        email: event.target.email.value,
-        message: event.target.message.value,
+        name: this.state.name,
+        email: this.state.email,
+        message: this.state.message,
       };
 
-      var x = emailjs.send('gmail', 'template_xOTwPgwc', templateParams, 'user_NT7ftcejhxZleQsYuCo9f')
-        .then(function(response) {
-          //if success
-          console.log('SUCCESS!', response.status, response.text);
-          return response.status;
-        }, function(error) {
-          //if failed
-          console.log('FAILED...', error);
+      emailjs.send('gmail', 'template_xOTwPgwc', templateParams, 'user_NT7ftcejhxZleQsYuCo9f')
+        .then(response => {
+          if(response.status == 200){
+            this.setState({thankYouMessageVisibility : true,
+              name : "",
+              email : "",
+              message : ""
+            });
+          }else{
+            this.setState({errorMessageVisibility : true,
+              name : "",
+              email : "",
+              message : ""
+            });
+          }
       });
   }
 
@@ -51,9 +82,14 @@ class App extends React.Component{
           <Projects data={this.state.data}/>
           <Certifications data={this.state.data}/>
           <Articles data={this.state.data}/>
-          <Contacts formSubmit={this.formSubmit} 
-          thankYouMessageVisibility={this.state.thankYouMessageVisibility}
-          errorMessageVisibility={this.state.errorMessageVisibility}/>
+          <Contacts name={this.state.name}
+            message={this.state.message}
+            email={this.state.email}
+            formSubmit={this.formSubmit} 
+            handleChange={this.handleChange}
+            thankYouMessageVisibility={this.state.thankYouMessageVisibility}
+            errorMessageVisibility={this.state.errorMessageVisibility}
+            spinnerVisibility={this.state.spinnerVisibility}/>
           <Footer/>
       </div>
     );
