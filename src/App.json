@@ -1,0 +1,78 @@
+{
+    "description" : "My name is Alessia.<br> I was born and grown in Brindisi, at the age of 19 I moved to the North of Italy to start my University career @<b>Polytechnic University of Turin</b>, at first in Biomedical Engineering and, after realizing that coding was my real passion, in <b>Computer Engineering</b>. <br>I interrupted my studies for a while to move to <b>Ireland</b>, where I worked for about 2 years, lately as a <b>Web Implementation Specialist</b> for the <b>Google Tag Team</b> in Dublin. <br>This January I came back to Italy in order to finish my studies and hopefully land my first job as a Software Engineer!<br><br> As I said <b>I really love everything related with programming</b>, Web Development in particular.",
+    "skills": {
+      "HTML": "https://i.ibb.co/qBsdVPs/html-512px.png",
+      "CSS": "https://i.ibb.co/ThKCTsS/css-512px.png",
+      "JS": "https://i.ibb.co/tMySwHc/js-512.png",
+      "React": "https://cdn.auth0.com/blog/react-js/react.png",
+      "jQuery": "https://abeon-hosting.com/images/jquery-logo-png-2.png",
+      "Bootstrap": "https://i.ibb.co/wsmGyzy/bootrastrap-512.png",
+      "Git" : "http://shijuvarghese.com/wp-content/uploads/2018/03/git-logo.png"
+    },
+    "projects": [
+      {
+        "fcc": true,
+        "name": "Local Weather",
+        "imageSource": "https://i.ibb.co/MNskngD/local-weather.png",
+        "description": "Web page that shows the weather in the current location, returning it via FreeCodeCamp Api.",
+        "skills": ["HTML","CSS","jQuery"],
+        "projectUrl": "https://codepen.io/Alessia/full/MGgzxd",
+        "codeUrl": "https://codepen.io/Alessia/pen/MGgzxd?editors=0010"
+      },
+      {
+        "fcc": true,
+        "name": "Pomodoro Clock",
+        "imageSource": "https://i.ibb.co/hdkKF4N/pomodoro.png",
+        "description": "Timer that allows to alternate study sessions and breaks.",
+        "skills": ["HTML","CSS","React"],
+        "projectUrl": "https://codepen.io/Alessia/full/YbYjzo",
+        "codeUrl": "https://codepen.io/Alessia/pen/YbYjzo"
+      },
+      {
+        "fcc": true,
+        "name": "React Calculator",
+        "imageSource": "https://i.ibb.co/wNkRTzH/calcolatrice.png",
+        "description": "Calculator that handles the 4 standard operations (sum, subtraction, division, multiplication) for both integers and floating-point numbers.",
+        "skills": ["HTML","CSS","React"],
+        "projectUrl": "https://codepen.io/Alessia/full/GLwLgp",
+        "codeUrl": "https://codepen.io/Alessia/pen/GLwLgp"
+      },
+      {
+        "fcc": true,
+        "name": "Random Quote Machine",
+        "imageSource": "https://i.ibb.co/6XBknV8/random-quote.png",
+        "description": "Web page that returns via API from 'Quotes on Design' a series of random quotes. They can be shared on Twitter clicking on the related Button.",
+        "skills": ["HTML","CSS","jQuery"],
+        "projectUrl": "https://codepen.io/Alessia/full/aYPoPK",
+        "codeUrl": "https://codepen.io/Alessia/pen/aYPoPK?editors=0010"
+      },
+      {
+        "fcc": true,
+        "name": "Markdown Previewer",
+        "imageSource": "https://i.ibb.co/BgJWmYK/markdown.png",
+        "description": "Responsive web page that allow to Markdown the content inserted in the editor and visualize it in the Preview Container.",
+        "skills": ["HTML","CSS","React","Marked.js"],
+        "projectUrl": "https://codepen.io/Alessia/full/aMgJOX",
+        "codeUrl": "https://codepen.io/Alessia/pen/aMgJOX?editors=0010"
+      },
+      {
+        "fcc": false,
+        "name": "100",
+        "imageSource": "https://i.ibb.co/jfFzT70/100.png",
+        "description": "This was my first project. I tried to replicate a game that my father plays on paper.",
+        "skills": ["HTML","CSS","JavaScript"],
+        "projectUrl": "http://100-game.azurewebsites.net/",
+        "codeUrl": "https://gitlab.com/AlessiaMiccoli/100"
+      }
+    ],
+    "articles": {
+        "How to create a responsive Navigation Bar with HTML, CSS and jQuery — step by step tutorial": "https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f?source=friends_link&sk=af69e81f2c521dc9cbb34cfc1aad8174",
+        "Regular Expressions (RegEx) and How to use them in JavaScript — with simple examples": "https://itnext.io/regular-expressions-regex-and-how-to-use-them-in-javascript-with-simple-examples-733a27f0717c?source=friends_link&sk=f747f50fadf63d86e221454ecf2605e5",
+        "How to create a Twitter Inspired Character Counter with an SVG Progress Ring using React": "https://itnext.io/how-to-create-a-twitter-inspired-character-counter-with-an-svg-progress-ring-react-js-352f3c8eefbc?source=friends_link&sk=502b793d1c5d788b8762dd296a002d48"
+    },
+    "certifications": {
+        "Responsive Web Design": "https://www.freecodecamp.org/certification/alessia-miccoli/responsive-web-design",
+        "JavaScript Algorithms and Data Structures": "https://www.freecodecamp.org/certification/alessia-miccoli/javascript-algorithms-and-data-structures",
+        "Front End Libraries": "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries"
+    }
+  }
