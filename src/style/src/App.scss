@@ -2,6 +2,9 @@ $text-info: #17a2b8;
 $light: #D4EEF2;
 $light-black: #343a40;
 $lighter-black: #464B51;
+$cursive: 'Cookie', cursive;
+$normal: 'Inconsolata', monospace;
+
 
 #project-container{
   display: flex;
@@ -13,6 +16,18 @@ $lighter-black: #464B51;
   position: relative;
   overflow: hidden;
   max-height: 50%;
+}
+
+.navbar-nav .nav-link {
+  color: $light!important;
+}
+
+form{
+  border-radius: 20px!important;
+}
+
+label{
+  color: $light;
 }
 
 .panel{
@@ -44,45 +59,58 @@ $lighter-black: #464B51;
   height: 100%;
 }
 
+#contacts-container{
+  height: 100vh;
+  background-color: $light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .jumbotron{
  position: relative;
  min-height: 100vh;
+ top: 0;
  border-radius: 0 !important;
- background-image: url("http://workforce.rice.edu/files/2017/09/bulbs-1663es2.jpg");
- background-repeat: no-repeat;
- background-size:100% 100%;
+ background-color: $light;
  padding: 0!important;
+ margin: 0;
 }
 
-.jumbotron>div{
-  padding-top: 10%!important;
-  background-color: rgba(0,0,0,0.65);
+.jumbotron > div{
+  background-color: rgba(255, 255, 255, 0.1);
   min-height: 100vh;
   width: 100%;
   height: 100%;
   color: $light;
-  text-shadow: 2px 2px 20px black;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 5%;
 }
 
-.display-4{
-  padding-top: 5%;
+.label{
+  color: $text-info;
 }
 
-.card-deck,
+.card-deck{
+  padding: 2%;
+}
+
+
 .card{
-    margin: 2% !important;
-}
-
-.card{
-  max-width: 40vw!important;
+  max-width: 10vw!important;
   border: none !important;
   box-shadow: 0 0 2pt 3pt $light;
+  margin: 2%;
 }
 
 body{
-  background: $light-black!important;
   overflow-x: hidden;
+  background: $light-black;
 }
 
 .navbar-toggler:focus{
@@ -90,10 +118,38 @@ body{
   box-shadow: 0 0 1pt 1pt $text-info;
 }
 
+.links ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.link a{
+  border-radius: 2pt;
+  border: 1px solid $text-info;
+  color: $text-info;
+  font-size: x-large;
+  letter-spacing: 3px;
+  font-family: $cursive;
+  padding: 10px;
+  margin: 5pt;
+}
+
+.link a:hover{
+  cursor: pointer;
+  transition: ease 1s;
+  border-color : $light-black;
+  color: $light-black !important;
+  text-decoration: none;
+}
+
 #skills{
   display: flex;
+  background-color:$text-info;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 
 .card-deck{
@@ -103,7 +159,9 @@ body{
 }
 
 .navbar{
-  background-image: linear-gradient(to right, $light-black, $light-black, #17a3b870, $light-black, $light-black);
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
 }
 
 .badge-container{
@@ -125,8 +183,10 @@ body{
 }
 
 .card-img-top{
-  opacity: 0.7;
   position: relative;
+  border-radius: 50%;
+  left: 25%;
+  width: 50%;
 }
 
 a{
@@ -134,22 +194,41 @@ a{
 }
 
 .skills{
-  animation: pulse 2s ease infinite;
-  background: $light-black;
-  border-radius: 10%;
-  width:80px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  padding: 15%;
+  width:100px;
+  height:100px;
   box-shadow: none;
+}
+
+.skill-btn{
+  position: relative;
 }
 
 .skills:hover{
   opacity: 0.9;
-  transform: scale(1.1);
-  transition: 1s ease;
 }
 
+#articles-container{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-#projects, #certifications, #articles, .ps > a, .ps{
+#projects, #articles, .ps > a, .ps{
   color: $light;
+}
+
+#projects{
+  margin-top: 2em;
+}
+
+#certifications{
+  color: $light-black;
 }
 
 .card:hover{
@@ -163,22 +242,23 @@ a{
   transition: 1s ease;
 }
 
-#contacts, #gform, #articles{
-  margin-top: 1em;
+#contacts, #articles{
+  margin-bottom: 1em;
 }
 
 #form{
-  color: $light;
+  color: $light-black;
 }
 
 #contacts{
-  background-color: $light;
+  background-image: linear-gradient(45deg, $light-black, $text-info);
+  box-shadow: 0 0 1pt 1pt $text-info;
   border-radius: .25rem;
-  box-shadow: 0 0 1pt 1pt $light;
-  padding: 1em;
+  padding: 2em;
 }
 
-#certifications, .container, #form{
+#certifications, 
+.container, #form{
   margin-bottom: 1em;
 }
 
@@ -196,7 +276,7 @@ a{
 }
 
 .list-group-flush .list-group-item{
-  background-color: $light-black;
+   background-color: transparent;
   border-color: $light;
 }
 
@@ -204,7 +284,11 @@ a{
   margin-right: 10px;
 }
 
-#hey-there, .portfolio,
+.portfolio{
+  color: $light-black;
+}
+
+.portfolio,
 #projects, .skills-text, 
 #certifications, .ps > a, .ps, 
 #form, #articles, #footer, .panel button a,
@@ -212,9 +296,17 @@ a{
 {
   font-family: 'Cookie', cursive;
   letter-spacing: 3px;
-
 }
 
+#certifications-container{
+  height: 100vh;
+  color: $light-black;
+  background-color: $light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .project-name{
   font-size: x-large;
 }
@@ -258,6 +350,11 @@ textarea:focus{
 
 .lead{
   font-weight: 500!important;
+  // background-color: $light-black;
+  // box-shadow: 0 0 1pt 2pt $text-info;
+  padding: 20px;
+  // border-radius: 20px;
+  color: $light-black;
 }
 
 h2, h3{
@@ -268,54 +365,31 @@ h2, h3{
   border:none!important;
 }
 
-#separator, 
-hr.separator2{
+#separator{
+  width: 100%;
   margin: 2%;
   border-top: none;
   height: 1px;
-}
-
-#separator{
   background-image: linear-gradient(to right, transparent, $text-info, transparent);
 }
 
-hr.separator2{
-  background-image: linear-gradient(to right, transparent, $light, transparent)!important;
+.dropdown-menu a{
+  font-size: smaller;
 }
 
-.nav-item a.text-info:hover,
-.dropdown-menu a.text-info:hover{
-  color:$light!important;
-  background-color: $light-black!important;
+
+.dropdown-item:hover{
+  background-color: $light!important;
   transition: 1s ease;
 }
 
-
-#hey-there{
-  overflow: hidden; 
-  border-right: .01em solid; 
-  white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .01em; 
-  font-size: 7vh;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.nav-link:hover{
+  color: $text-info!important;
+  transition: 1s ease;
 }
 
 .skill-btn:focus{
   box-shadow: none;
-}
-
-@keyframes typing {
-  from { width: 0; text-shadow: none }
-  to { width: 100%;   text-shadow: 2px 2px 20px black; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $light; }
-  100%{ border-color: transparent; }
 }
 
 @media only screen and (max-width: 300px) {

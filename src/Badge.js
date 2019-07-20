@@ -1,9 +1,6 @@
 import React from 'react';
 
 class Badge extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return (

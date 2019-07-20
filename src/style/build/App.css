@@ -10,6 +10,18 @@
   max-height: 50%;
 }
 
+.navbar-nav .nav-link {
+  color: #D4EEF2 !important;
+}
+
+form {
+  border-radius: 20px !important;
+}
+
+label {
+  color: #D4EEF2;
+}
+
 .panel {
   opacity: 0;
   padding: 2%;
@@ -39,45 +51,57 @@
   height: 100%;
 }
 
+#contacts-container {
+  height: 100vh;
+  background-color: #D4EEF2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .jumbotron {
   position: relative;
   min-height: 100vh;
+  top: 0;
   border-radius: 0 !important;
-  background-image: url("http://workforce.rice.edu/files/2017/09/bulbs-1663es2.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-color: #D4EEF2;
   padding: 0 !important;
+  margin: 0;
 }
 
 .jumbotron > div {
-  padding-top: 10% !important;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(255, 255, 255, 0.1);
   min-height: 100vh;
   width: 100%;
   height: 100%;
   color: #D4EEF2;
-  text-shadow: 2px 2px 20px black;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 5%;
 }
 
-.display-4 {
-  padding-top: 5%;
+.label {
+  color: #17a2b8;
 }
 
-.card-deck,
+.card-deck {
+  padding: 2%;
+}
+
 .card {
-  margin: 2% !important;
-}
-
-.card {
-  max-width: 40vw !important;
+  max-width: 10vw !important;
   border: none !important;
   box-shadow: 0 0 2pt 3pt #D4EEF2;
+  margin: 2%;
 }
 
 body {
-  background: #343a40 !important;
   overflow-x: hidden;
+  background: #343a40;
 }
 
 .navbar-toggler:focus {
@@ -85,10 +109,38 @@ body {
   box-shadow: 0 0 1pt 1pt #17a2b8;
 }
 
+.links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.link a {
+  border-radius: 2pt;
+  border: 1px solid #17a2b8;
+  color: #17a2b8;
+  font-size: x-large;
+  letter-spacing: 3px;
+  font-family: "Cookie", cursive;
+  padding: 10px;
+  margin: 5pt;
+}
+
+.link a:hover {
+  cursor: pointer;
+  transition: ease 1s;
+  border-color: #343a40;
+  color: #343a40 !important;
+  text-decoration: none;
+}
+
 #skills {
   display: flex;
+  background-color: #17a2b8;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
 }
 
 .card-deck {
@@ -98,7 +150,9 @@ body {
 }
 
 .navbar {
-  background-image: linear-gradient(to right, #343a40, #343a40, #17a3b870, #343a40, #343a40);
+  position: absolute;
+  z-index: 3;
+  width: 100vw;
 }
 
 .badge-container {
@@ -120,8 +174,10 @@ body {
 }
 
 .card-img-top {
-  opacity: 0.7;
   position: relative;
+  border-radius: 50%;
+  left: 25%;
+  width: 50%;
 }
 
 a {
@@ -129,21 +185,41 @@ a {
 }
 
 .skills {
-  animation: pulse 2s ease infinite;
-  background: #343a40;
-  border-radius: 10%;
-  width: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  padding: 15%;
+  width: 100px;
+  height: 100px;
   box-shadow: none;
+}
+
+.skill-btn {
+  position: relative;
 }
 
 .skills:hover {
   opacity: 0.9;
-  transform: scale(1.1);
-  transition: 1s ease;
 }
 
-#projects, #certifications, #articles, .ps > a, .ps {
+#articles-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects, #articles, .ps > a, .ps {
   color: #D4EEF2;
+}
+
+#projects {
+  margin-top: 2em;
+}
+
+#certifications {
+  color: #343a40;
 }
 
 .card:hover {
@@ -157,22 +233,23 @@ a {
   transition: 1s ease;
 }
 
-#contacts, #gform, #articles {
-  margin-top: 1em;
+#contacts, #articles {
+  margin-bottom: 1em;
 }
 
 #form {
-  color: #D4EEF2;
+  color: #343a40;
 }
 
 #contacts {
-  background-color: #D4EEF2;
+  background-image: linear-gradient(45deg, #343a40, #17a2b8);
+  box-shadow: 0 0 1pt 1pt #17a2b8;
   border-radius: 0.25rem;
-  box-shadow: 0 0 1pt 1pt #D4EEF2;
-  padding: 1em;
+  padding: 2em;
 }
 
-#certifications, .container, #form {
+#certifications,
+.container, #form {
   margin-bottom: 1em;
 }
 
@@ -190,7 +267,7 @@ a {
 }
 
 .list-group-flush .list-group-item {
-  background-color: #343a40;
+  background-color: transparent;
   border-color: #D4EEF2;
 }
 
@@ -198,13 +275,27 @@ a {
   margin-right: 10px;
 }
 
-#hey-there, .portfolio,
+.portfolio {
+  color: #343a40;
+}
+
+.portfolio,
 #projects, .skills-text,
 #certifications, .ps > a, .ps,
 #form, #articles, #footer, .panel button a,
 .project-name {
   font-family: "Cookie", cursive;
   letter-spacing: 3px;
+}
+
+#certifications-container {
+  height: 100vh;
+  color: #343a40;
+  background-color: #D4EEF2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-name {
@@ -250,6 +341,8 @@ textarea:focus {
 
 .lead {
   font-weight: 500 !important;
+  padding: 20px;
+  color: #343a40;
 }
 
 h2, h3 {
@@ -260,63 +353,32 @@ h2, h3 {
   border: none !important;
 }
 
-#separator,
-hr.separator2 {
+#separator {
+  width: 100%;
   margin: 2%;
   border-top: none;
   height: 1px;
-}
-
-#separator {
   background-image: linear-gradient(to right, transparent, #17a2b8, transparent);
 }
 
-hr.separator2 {
-  background-image: linear-gradient(to right, transparent, #D4EEF2, transparent) !important;
+.dropdown-menu a {
+  font-size: smaller;
 }
 
-.nav-item a.text-info:hover,
-.dropdown-menu a.text-info:hover {
-  color: #D4EEF2 !important;
-  background-color: #343a40 !important;
+.dropdown-item:hover {
+  background-color: #D4EEF2 !important;
   transition: 1s ease;
 }
 
-#hey-there {
-  overflow: hidden;
-  border-right: 0.01em solid;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.01em;
-  font-size: 7vh;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+.nav-link:hover {
+  color: #17a2b8 !important;
+  transition: 1s ease;
 }
 
 .skill-btn:focus {
   box-shadow: none;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-    text-shadow: none;
-  }
-  to {
-    width: 100%;
-    text-shadow: 2px 2px 20px black;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #D4EEF2;
-  }
-  100% {
-    border-color: transparent;
-  }
-}
 @media only screen and (max-width: 300px) {
   #hey-there {
     font-size: 5vh;

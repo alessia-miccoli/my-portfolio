@@ -19,9 +19,55 @@ class App extends React.Component{
       data : data,
       name : "",
       email : "",
-      message : ""
+      message : "",
+      skillSelected: {
+        "HTML": {"selected" : false, 
+            "skillStyle": { 
+                transform: "scale(1.1)",
+                background: "rgba(255, 255, 255, 0.4)"
+            }
+        },
+        "CSS":  {"selected" : false, 
+             "skillStyle": { 
+                transform: "scale(1.1)",
+                background: "rgba(255, 255, 255, 0.4)"
+            }
+        },
+        "JavaScript": {"selected" : false, 
+            "skillStyle": { 
+                transform: "scale(1.0)",
+                background: "rgba(255, 255, 255, 0.3)"
+            }
+        },
+        "React":  {"selected" : false, 
+            "skillStyle": { 
+                transform: "scale(1.0)",
+                background: "rgba(255, 255, 255, 0.3)"
+            }
+        },
+        "jQuery":  {"selected" : false, 
+            "skillStyle": { 
+                transform: "scale(1.0)",
+                background: "rgba(255, 255, 255, 0.3)"
+            }
+        },
+        "Bootstrap": {"selected" : false, 
+            "skillStyle": { 
+                transform: "scale(1.0)",
+                background: "rgba(255, 255, 255, 0.3)"
+            }
+        },
+        "Git" :  {"selected" : false, 
+            "skillStyle": { 
+                transform: "scale(1.0)",
+                background: "rgba(255, 255, 255, 0.3)"
+            }
+        }
+      },
+      selected : []
     }
 
+    this.selectSkill = this.selectSkill.bind(this);
     this.formSubmit = this.formSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -43,7 +89,56 @@ class App extends React.Component{
           message : event.target.value
         });
         break;
+      default: 
+        break;
     }
+  }
+
+  selectSkill(event){
+    //the style of the skill is updated
+
+    var name = event.target.name;
+    var skills = {...this.state.skillSelected};
+
+    skills[name].selected = !skills[name].selected;
+
+    if(skills[name].selected){
+        skills[name].skillStyle = {
+            transform: "scale(1.1)",
+            background: "rgba(255, 255, 255, 0.4)"
+        }
+    }else {
+        skills[name].skillStyle = { 
+            transform: "scale(1.0)",
+            background: "rgba(255, 255, 255, 0.3)"
+        }
+    }
+
+    //each time a skill is selected, the "selected" array in the state is updated:
+    // the skill selected or deselected is respectively added or removed from the array
+
+    if(skills[name].selected){
+      this.setState((prev)=>({
+        skillSelected : skills,
+        selected: prev.selected.concat(name)
+      }));
+    }else{
+      var index = this.state.selected.indexOf(name);
+      var sel =  this.state.selected.slice(0,index).concat(this.state.selected.slice(index + 1));
+
+      this.setState(()=>({
+        skillSelected: skills,
+        selected: sel
+      }));
+    }
+
+    //display projects based on the skills selected
+
+    function skillContained(){
+      
+
+    }
+
   }
 
   formSubmit(event){
@@ -58,20 +153,20 @@ class App extends React.Component{
 
       emailjs.send('gmail', 'template_xOTwPgwc', templateParams, 'user_NT7ftcejhxZleQsYuCo9f')
         .then(response => {
-          if(response.status == 200){
-            this.setState({thankYouMessageVisibility : true,
-              name : "",
-              email : "",
-              message : ""
+          if(response.status === 200){
+            this.setState({thankYouMessageVisibility : true
             });
           }else{
-            this.setState({errorMessageVisibility : true,
-              name : "",
-              email : "",
-              message : ""
+            this.setState({errorMessageVisibility : true
             });
           }
-      });
+          
+          this.setState({
+            name : "",
+            email : "",
+            message : ""
+          });
+        });
   }
 
   render(){
@@ -79,7 +174,9 @@ class App extends React.Component{
       <div className="App">
           <Navbar data={this.state.data}/>
           <Jumbotron data={this.state.data}/>
-          <Projects data={this.state.data}/>
+          <Projects data={this.state.data} 
+          skillSelected={this.state.skillSelected}
+          selectSkill={this.selectSkill}/>
           <Certifications data={this.state.data}/>
           <Articles data={this.state.data}/>
           <Contacts name={this.state.name}

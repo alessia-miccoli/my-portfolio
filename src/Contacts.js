@@ -1,13 +1,9 @@
 import React from 'react';
 
 class Contacts extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
     render(){
         return (
-        <div>
+        <div id="contacts-container">
             <h3 id="form" className="text-center">Would you like to get in touch?</h3>
             <form id="contacts" className="container" onSubmit={this.props.formSubmit}>
                 <div className="form-group">
@@ -33,10 +29,10 @@ class Contacts extends React.Component{
                     </div>
                 </div>}
                 {this.props.thankYouMessageVisibility && <div className="alert alert-success" role="alert">
-                    Thanks! I've received your message, I'll get back to you asap. <span>🙂</span>
+                    Thanks! I've received your message, I'll get back to you asap. <span role="img" aria-label="smile">🙂</span>
                 </div>}
                 {this.props.errorMessageVisibility && <div className="alert alert-danger" role="alert">
-                    I'm sorry! I'm having troubles getting your message... <span>😕</span><br/>
+                    I'm sorry! I'm having troubles getting your message... <span role="img" aria-label="ops">😕</span><br/>
                     please consider mailing me directly at miccoli.alessia@hotmail.com
                 </div>}
             </form>

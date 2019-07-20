@@ -4,9 +4,6 @@ import Panel from './Panel';
 
 
 class Project extends React.Component{
-    constructor(props) {
-        super(props);
-    }
 
     render(){
     var skills = this.props.skills.map(x => <Badge skill={x}/>);

@@ -3,7 +3,7 @@
     "skills": {
       "HTML": "https://i.ibb.co/qBsdVPs/html-512px.png",
       "CSS": "https://i.ibb.co/ThKCTsS/css-512px.png",
-      "JS": "https://i.ibb.co/tMySwHc/js-512.png",
+      "JavaScript": "https://i.ibb.co/tMySwHc/js-512.png",
       "React": "https://cdn.auth0.com/blog/react-js/react.png",
       "jQuery": "https://abeon-hosting.com/images/jquery-logo-png-2.png",
       "Bootstrap": "https://i.ibb.co/wsmGyzy/bootrastrap-512.png",
@@ -27,6 +27,15 @@
         "skills": ["HTML","CSS","React"],
         "projectUrl": "https://codepen.io/Alessia/full/YbYjzo",
         "codeUrl": "https://codepen.io/Alessia/pen/YbYjzo"
+      },
+      {
+        "fcc": true,
+        "name": "Drum Machine",
+        "imageSource": "https://i.ibb.co/6y6s7SK/drum-machine.png",
+        "description": "Drum pads that can be played with the mouse or the keyboard, the name of the track played is shown on a display.",
+        "skills": ["HTML","CSS","React"],
+        "projectUrl": "https://codepen.io/Alessia/full/rbNBrE",
+        "codeUrl": "https://codepen.io/Alessia/pen/rbNBrE?editors=0010"
       },
       {
         "fcc": true,
@@ -68,11 +77,13 @@
     "articles": {
         "How to create a responsive Navigation Bar with HTML, CSS and jQuery — step by step tutorial": "https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f?source=friends_link&sk=af69e81f2c521dc9cbb34cfc1aad8174",
         "Regular Expressions (RegEx) and How to use them in JavaScript — with simple examples": "https://itnext.io/regular-expressions-regex-and-how-to-use-them-in-javascript-with-simple-examples-733a27f0717c?source=friends_link&sk=f747f50fadf63d86e221454ecf2605e5",
-        "How to create a Twitter Inspired Character Counter with an SVG Progress Ring using React": "https://itnext.io/how-to-create-a-twitter-inspired-character-counter-with-an-svg-progress-ring-react-js-352f3c8eefbc?source=friends_link&sk=502b793d1c5d788b8762dd296a002d48"
+        "How to create a Twitter Inspired Character Counter with an SVG Progress Ring using React": "https://itnext.io/how-to-create-a-twitter-inspired-character-counter-with-an-svg-progress-ring-react-js-352f3c8eefbc?source=friends_link&sk=502b793d1c5d788b8762dd296a002d48",
+        "How to make a form work without back end (with EmailJS)" : "https://medium.com/@alessiamiccoli/how-to-make-a-form-work-without-back-end-with-emailjs-fc956fe371d4?source=friends_link&sk=20fcbe4a7283427571aa029855000d2d"
     },
     "certifications": {
         "Responsive Web Design": "https://www.freecodecamp.org/certification/alessia-miccoli/responsive-web-design",
         "JavaScript Algorithms and Data Structures": "https://www.freecodecamp.org/certification/alessia-miccoli/javascript-algorithms-and-data-structures",
-        "Front End Libraries": "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries"
+        "Front End Libraries": "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries",
+        "PHP Tutorial Course": "https://www.sololearn.com/Certificate/1059-13851495/pdf/"
     }
   }
