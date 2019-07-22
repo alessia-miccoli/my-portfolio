@@ -62,26 +62,20 @@ label {
 
 .jumbotron {
   position: relative;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #D4EEF2;
   top: 0;
   border-radius: 0 !important;
-  background-color: #D4EEF2;
   padding: 0 !important;
   margin: 0;
 }
 
-.jumbotron > div {
-  background-color: rgba(255, 255, 255, 0.1);
-  min-height: 100vh;
-  width: 100%;
-  height: 100%;
-  color: #D4EEF2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-  align-items: center;
-  padding: 5%;
+.navbar {
+  background-image: linear-gradient(45deg, #17a2b8, #343a40);
 }
 
 .label {
@@ -136,11 +130,14 @@ body {
 }
 
 #skills {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
-  background-color: #17a2b8;
+  background-image: linear-gradient(to left, #17a2b8, #343a40);
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 2em;
+  width: 100vw;
 }
 
 .card-deck {
@@ -188,8 +185,8 @@ a {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   padding: 15%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   box-shadow: none;
 }
 
@@ -216,10 +213,6 @@ a {
 
 #projects {
   margin-top: 2em;
-}
-
-#certifications {
-  color: #343a40;
 }
 
 .card:hover {
@@ -276,7 +269,7 @@ a {
 }
 
 .portfolio {
-  color: #343a40;
+  color: #D4EEF2;
 }
 
 .portfolio,
@@ -308,7 +301,7 @@ a {
 
 #footer {
   margin: 0;
-  color: #17a2b8;
+  color: #D4EEF2;
 }
 
 input:focus,
@@ -386,6 +379,40 @@ h2, h3 {
 
   .card-deck {
     justify-content: center !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .skills {
+    width: 35px;
+    height: 35px;
+  }
+
+  .portfolio {
+    font-size: 3vh;
+  }
+
+  #skills {
+    height: 10vh;
+  }
+
+  .lead {
+    font-size: 2vh;
+  }
+
+  .link a {
+    font-size: 2vh;
+  }
+
+  #separator {
+    margin-bottom: 3vh;
+  }
+
+  .card {
+    max-width: 100% !important;
+  }
+
+  .list-group {
+    padding-left: auto;
   }
 }
 

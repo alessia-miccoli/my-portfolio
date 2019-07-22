@@ -1,6 +1,5 @@
 import React from 'react';
 import Project from './Project';
-import Skills from './Skills';
 
 class Projects extends React.Component{
 
@@ -11,8 +10,6 @@ class Projects extends React.Component{
         return (
         <div id="projects-container">
 
-            <Skills data={this.props.data}
-            skillSelected={this.props.skillSelected} selectSkill={this.props.selectSkill}/> 
             <h3 id="projects" className="text-center">Here are some of my projects</h3>
             <div className="card-deck">
                {projects}

@@ -69,7 +69,7 @@
         "name": "100",
         "imageSource": "https://i.ibb.co/jfFzT70/100.png",
         "description": "This was my first project. I tried to replicate a game that my father plays on paper.",
-        "skills": ["HTML","CSS","JavaScript"],
+        "skills": ["HTML","CSS","JavaScript","Git"],
         "projectUrl": "http://100-game.azurewebsites.net/",
         "codeUrl": "https://gitlab.com/AlessiaMiccoli/100"
       }

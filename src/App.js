@@ -23,14 +23,14 @@ class App extends React.Component{
       skillSelected: {
         "HTML": {"selected" : false, 
             "skillStyle": { 
-                transform: "scale(1.1)",
-                background: "rgba(255, 255, 255, 0.4)"
+              transform: "scale(1.0)",
+              background: "rgba(255, 255, 255, 0.3)"
             }
         },
         "CSS":  {"selected" : false, 
              "skillStyle": { 
-                transform: "scale(1.1)",
-                background: "rgba(255, 255, 255, 0.4)"
+                transform: "scale(1.0)",
+                background: "rgba(255, 255, 255, 0.3)"
             }
         },
         "JavaScript": {"selected" : false, 
@@ -134,10 +134,10 @@ class App extends React.Component{
 
     //display projects based on the skills selected
 
-    function skillContained(){
+    // function skillContained(){
       
 
-    }
+    // }
 
   }
 
@@ -173,10 +173,10 @@ class App extends React.Component{
     return (
       <div className="App">
           <Navbar data={this.state.data}/>
-          <Jumbotron data={this.state.data}/>
-          <Projects data={this.state.data} 
+          <Jumbotron data={this.state.data}
           skillSelected={this.state.skillSelected}
           selectSkill={this.selectSkill}/>
+          <Projects data={this.state.data}/>
           <Certifications data={this.state.data}/>
           <Articles data={this.state.data}/>
           <Contacts name={this.state.name}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Skills from './Skills';
 
 class Jumbotron extends React.Component{
 
@@ -16,7 +17,10 @@ class Jumbotron extends React.Component{
                         <li className="link"><a  href="#form">Contacts</a></li>
                     </ul>
                 </nav>
-            </div>
+                
+            </div> 
+            <Skills data={this.props.data}
+                skillSelected={this.props.skillSelected} selectSkill={this.props.selectSkill}/>
         </div>);
     }
 }
