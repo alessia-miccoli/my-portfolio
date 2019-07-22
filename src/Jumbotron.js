@@ -6,7 +6,7 @@ class Jumbotron extends React.Component{
     render(){
         return (
         <div  id="about" className="jumbotron">
-            <div>
+            <div id="clear">
                 <p className="lead" dangerouslySetInnerHTML={{__html: this.props.data.description}}/>
                 <hr id="separator"/>
                 <nav className="links">

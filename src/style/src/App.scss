@@ -30,6 +30,13 @@ label{
   color: $light;
 }
 
+#about{
+  overflow-x: hidden;
+  width: 100vw;
+  padding: 20px;
+  background-image:linear-gradient(to left, $text-info, $light-black);
+}
+
 .panel{
   opacity: 0;
   padding: 2%;
@@ -83,7 +90,16 @@ label{
 }
 
 .navbar{
-  background-image: linear-gradient(45deg, $text-info, $light-black);
+  // background-image: linear-gradient(45deg, $text-info, $light-black);
+  // background: $light-black;
+}
+
+#clear{
+  background-color: rgba(255,255,255,0.5);
+  background-image: linear-gradient(to right, $light, transparent);
+  margin: 0 35px;
+  border-radius: 20px;
+  padding: 5px 0;
 }
 
 .label{
@@ -120,13 +136,19 @@ body{
 }
 
 .link a{
-  border-radius: 2pt;
-  border: 1px solid $text-info;
-  color: $text-info;
-  font-size: x-large;
-  letter-spacing: 3px;
-  font-family: $cursive;
-  padding: 10px;
+  border-radius: 10px;
+  // border: 1px solid $light-black;
+  font-size: 2.5vh;
+  color: $light-black !important;
+  text-decoration: none;
+  background-image: none;
+  // font-size: x-large;
+  // letter-spacing: 3px;
+  font-family: 'Darker Grotesque', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
   margin: 5pt;
 }
 
@@ -134,8 +156,21 @@ body{
   cursor: pointer;
   transition: ease 1s;
   border-color : $light-black;
-  color: $light-black !important;
-  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.date, .by{
+  margin-bottom: 0;
+}
+
+.by{
+  letter-spacing: 1px;
+  color: $light-black;
+}
+
+.date{
+  color: $lighter-black;
+  font-size: smaller;
 }
 
 #skills{
@@ -145,13 +180,14 @@ body{
   display: flex;
   background-image:linear-gradient(to left, $text-info, $light-black);
   flex-wrap: wrap;
+  padding: 5px;
   justify-content: space-evenly;
   width: 100vw;
 }
 
 .card-deck{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap!important;
 }
 
@@ -180,6 +216,7 @@ body{
 }
 
 .card-img-top{
+  display: none;
   position: relative;
   border-radius: 50%;
   left: 25%;
@@ -333,7 +370,8 @@ textarea:focus{
 }
 
 *{
-  font-family: 'Inconsolata', monospace;
+ font-family: 'Darker Grotesque', sans-serif;
+ font-size: 2.5vh;
 }
 
 #spinner-container{
@@ -344,11 +382,13 @@ textarea:focus{
 
 .lead{
   font-weight: 500!important;
-  // background-color: $light-black;
-  // box-shadow: 0 0 1pt 2pt $text-info;
-  padding: 20px;
-  // border-radius: 20px;
   color: $light-black;
+  font-size: 3vh;
+  padding: 0 50px;
+}
+
+b{
+  font-size: 3vh;
 }
 
 h2, h3{
@@ -361,10 +401,9 @@ h2, h3{
 
 #separator{
   width: 100%;
-  margin: 2%;
   border-top: none;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, $text-info, transparent);
+  height: 5px;
+  background-image: linear-gradient(to right, $light-black, $text-info);
 }
 
 .dropdown-menu a{
@@ -396,10 +435,22 @@ h2, h3{
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .skills{
     width: 35px;
     height: 35px;
+  }
+
+  .lead, b{
+    font-size: 2vh;
+  }
+
+  .links ul{
+    padding-left: 5%;
+  }
+
+  .btn{
+    padding: 0;
   }
 
   .portfolio{
@@ -408,10 +459,6 @@ h2, h3{
 
   #skills{
     height: 10vh;
-  }
-
-  .lead{
-    font-size: 2vh;
   }
 
   .link a{
@@ -426,7 +473,15 @@ h2, h3{
     max-width: 100%!important; 
   }
 
-  .list-group{
-    padding-left: auto;
+  #certification-list{
+    padding-right: 0;
+  }
+
+  .list-group-flush{
+    padding-right: 0;
+  }
+
+  #skills{
+    height: auto;
   }
 }

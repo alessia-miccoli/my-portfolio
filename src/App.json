@@ -1,5 +1,5 @@
 {
-    "description" : "My name is Alessia.<br> I was born and grown in Brindisi, at the age of 19 I moved to the North of Italy to start my University career @<b>Polytechnic University of Turin</b>, at first in Biomedical Engineering and, after realizing that coding was my real passion, in <b>Computer Engineering</b>. <br>I interrupted my studies for a while to move to <b>Ireland</b>, where I worked for about 2 years, lately as a <b>Web Implementation Specialist</b> for the <b>Google Tag Team</b> in Dublin. <br>This January I came back to Italy in order to finish my studies and hopefully land my first job as a Software Engineer!<br><br> As I said <b>I really love everything related with programming</b>, Web Development in particular.",
+    "description" : "Hi, my name is Alessia. 👋<br> 👩‍💻📚 I'm a Computer Engineering Student @<b>Polytechnic University of Turin</b>.<br><br>I interrupted my studies for a while to move to <b>Ireland</b>, where I worked for about 2 years, lately as a <b>Web Implementation Specialist</b> for the <b>Google Tag Team</b> in Dublin. <br>This January I came back to Italy in order to finish my studies and hopefully land my first job as a Software Engineer!<br><br> 💙 I really love everything related with programming</b>, Web Development in particular.",
     "skills": {
       "HTML": "https://i.ibb.co/qBsdVPs/html-512px.png",
       "CSS": "https://i.ibb.co/ThKCTsS/css-512px.png",
@@ -81,9 +81,21 @@
         "How to make a form work without back end (with EmailJS)" : "https://medium.com/@alessiamiccoli/how-to-make-a-form-work-without-back-end-with-emailjs-fc956fe371d4?source=friends_link&sk=20fcbe4a7283427571aa029855000d2d"
     },
     "certifications": {
-        "Responsive Web Design": "https://www.freecodecamp.org/certification/alessia-miccoli/responsive-web-design",
-        "JavaScript Algorithms and Data Structures": "https://www.freecodecamp.org/certification/alessia-miccoli/javascript-algorithms-and-data-structures",
-        "Front End Libraries": "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries",
-        "PHP Tutorial Course": "https://www.sololearn.com/Certificate/1059-13851495/pdf/"
-    }
+      "Responsive Web Design":       
+        {"link": "https://www.freecodecamp.org/certification/alessia-miccoli/responsive-web-design",
+        "date": "September 7, 2018",
+        "by" : "FreeCodeCamp"},
+      "JavaScript Algorithms and Data Structures": 
+        { "link": "https://www.freecodecamp.org/certification/alessia-miccoli/javascript-algorithms-and-data-structures",
+          "date": "February 19, 2019",
+          "by" : "FreeCodeCamp"},
+      "PHP Tutorial Course": 
+        {"link" : "https://www.sololearn.com/Certificate/1059-13851495/pdf/",
+          "date" : "07 May, 2019",
+          "by" : "SoloLearn"},
+      "Front End Libraries": 
+        {"link" : "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries",
+          "date": "May 24, 2019",
+          "by" : "FreeCodeCamp"}
+      }
   }
