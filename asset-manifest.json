@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alessia-miccoli.github.io/my-portfolio/static/css/main.f75be26c.chunk.css",
-    "main.js": "/alessia-miccoli.github.io/my-portfolio/static/js/main.42ca6ad6.chunk.js",
-    "main.js.map": "/alessia-miccoli.github.io/my-portfolio/static/js/main.42ca6ad6.chunk.js.map",
-    "runtime~main.js": "/alessia-miccoli.github.io/my-portfolio/static/js/runtime~main.a279df49.js",
-    "runtime~main.js.map": "/alessia-miccoli.github.io/my-portfolio/static/js/runtime~main.a279df49.js.map",
-    "static/js/2.58517254.chunk.js": "/alessia-miccoli.github.io/my-portfolio/static/js/2.58517254.chunk.js",
-    "static/js/2.58517254.chunk.js.map": "/alessia-miccoli.github.io/my-portfolio/static/js/2.58517254.chunk.js.map",
-    "index.html": "/alessia-miccoli.github.io/my-portfolio/index.html",
-    "precache-manifest.8c7bfb7b03bd91c52cb9b4434b1bd5a6.js": "/alessia-miccoli.github.io/my-portfolio/precache-manifest.8c7bfb7b03bd91c52cb9b4434b1bd5a6.js",
-    "service-worker.js": "/alessia-miccoli.github.io/my-portfolio/service-worker.js",
-    "static/css/main.f75be26c.chunk.css.map": "/alessia-miccoli.github.io/my-portfolio/static/css/main.f75be26c.chunk.css.map"
+    "main.css": "/my-portfolio/static/css/main.f75be26c.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.ef1a6724.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.ef1a6724.chunk.js.map",
+    "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
+    "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
+    "static/js/2.58517254.chunk.js": "/my-portfolio/static/js/2.58517254.chunk.js",
+    "static/js/2.58517254.chunk.js.map": "/my-portfolio/static/js/2.58517254.chunk.js.map",
+    "index.html": "/my-portfolio/index.html",
+    "precache-manifest.866406b62bb5e7e16e90136b62a2c231.js": "/my-portfolio/precache-manifest.866406b62bb5e7e16e90136b62a2c231.js",
+    "service-worker.js": "/my-portfolio/service-worker.js",
+    "static/css/main.f75be26c.chunk.css.map": "/my-portfolio/static/css/main.f75be26c.chunk.css.map"
   }
 }
