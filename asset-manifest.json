@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/alessia-miccoli/my-portfolio/public/index.html/static/css/main.f75be26c.chunk.css",
-    "main.js": "/alessia-miccoli/my-portfolio/public/index.html/static/js/main.f2f9d0f8.chunk.js",
-    "main.js.map": "/alessia-miccoli/my-portfolio/public/index.html/static/js/main.f2f9d0f8.chunk.js.map",
-    "runtime~main.js": "/alessia-miccoli/my-portfolio/public/index.html/static/js/runtime~main.52902879.js",
-    "runtime~main.js.map": "/alessia-miccoli/my-portfolio/public/index.html/static/js/runtime~main.52902879.js.map",
-    "static/js/2.58517254.chunk.js": "/alessia-miccoli/my-portfolio/public/index.html/static/js/2.58517254.chunk.js",
-    "static/js/2.58517254.chunk.js.map": "/alessia-miccoli/my-portfolio/public/index.html/static/js/2.58517254.chunk.js.map",
-    "index.html": "/alessia-miccoli/my-portfolio/public/index.html/index.html",
-    "precache-manifest.81a9bfe470dd697050a323587143569a.js": "/alessia-miccoli/my-portfolio/public/index.html/precache-manifest.81a9bfe470dd697050a323587143569a.js",
-    "service-worker.js": "/alessia-miccoli/my-portfolio/public/index.html/service-worker.js",
-    "static/css/main.f75be26c.chunk.css.map": "/alessia-miccoli/my-portfolio/public/index.html/static/css/main.f75be26c.chunk.css.map"
+    "main.css": "/alessia-miccoli/my-portfolio/static/css/main.f75be26c.chunk.css",
+    "main.js": "/alessia-miccoli/my-portfolio/static/js/main.a77e346f.chunk.js",
+    "main.js.map": "/alessia-miccoli/my-portfolio/static/js/main.a77e346f.chunk.js.map",
+    "runtime~main.js": "/alessia-miccoli/my-portfolio/static/js/runtime~main.abc60480.js",
+    "runtime~main.js.map": "/alessia-miccoli/my-portfolio/static/js/runtime~main.abc60480.js.map",
+    "static/js/2.58517254.chunk.js": "/alessia-miccoli/my-portfolio/static/js/2.58517254.chunk.js",
+    "static/js/2.58517254.chunk.js.map": "/alessia-miccoli/my-portfolio/static/js/2.58517254.chunk.js.map",
+    "index.html": "/alessia-miccoli/my-portfolio/index.html",
+    "precache-manifest.9868a28c877626d5cead2f0837f270ce.js": "/alessia-miccoli/my-portfolio/precache-manifest.9868a28c877626d5cead2f0837f270ce.js",
+    "service-worker.js": "/alessia-miccoli/my-portfolio/service-worker.js",
+    "static/css/main.f75be26c.chunk.css.map": "/alessia-miccoli/my-portfolio/static/css/main.f75be26c.chunk.css.map"
   }
 }
