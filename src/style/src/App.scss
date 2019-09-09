@@ -174,7 +174,7 @@ body{
   left: 0;
   display: flex;
   // background-image:linear-gradient(to left, $text-info, $light-black);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 5px;
   justify-content: space-evenly;
   width: 100vw;
@@ -425,19 +425,31 @@ h2, h3{
 }
 
 @media only screen and (max-width: 300px) {
-  #hey-there{
-    font-size: 5vh;
-  }
 
   .card-deck{
     justify-content: center!important;
   }
+
+  #projects-container{
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+
+  .lead{
+    padding: 0 10px!important;
+    text-align: justify;
+    font-size: 2.5vh!important;
+  }
+
   .skills{
     width: 35px;
     height: 35px;
+  }
+
+  #projects-container{
+    height: auto;
   }
 
   .lead, b{
