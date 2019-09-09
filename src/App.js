@@ -24,43 +24,43 @@ class App extends React.Component{
         "HTML": {"selected" : false, 
             "skillStyle": { 
               transform: "scale(1.0)",
-              background: "rgba(255, 255, 255, 0.3)"
+              background: "rgba(255, 255, 255, 0)"
             }
         },
         "CSS":  {"selected" : false, 
              "skillStyle": { 
                 transform: "scale(1.0)",
-                background: "rgba(255, 255, 255, 0.3)"
+                background: "rgba(255, 255, 255, 0)"
             }
         },
         "JavaScript": {"selected" : false, 
             "skillStyle": { 
                 transform: "scale(1.0)",
-                background: "rgba(255, 255, 255, 0.3)"
+                background: "rgba(255, 255, 255, 0)"
             }
         },
         "React":  {"selected" : false, 
             "skillStyle": { 
                 transform: "scale(1.0)",
-                background: "rgba(255, 255, 255, 0.3)"
+                background: "rgba(255, 255, 255, 0)"
             }
         },
         "jQuery":  {"selected" : false, 
             "skillStyle": { 
                 transform: "scale(1.0)",
-                background: "rgba(255, 255, 255, 0.3)"
+                background: "rgba(255, 255, 255, 0)"
             }
         },
         "Bootstrap": {"selected" : false, 
             "skillStyle": { 
                 transform: "scale(1.0)",
-                background: "rgba(255, 255, 255, 0.3)"
+                background: "rgba(255, 255, 255, 0)"
             }
         },
         "Git" :  {"selected" : false, 
             "skillStyle": { 
                 transform: "scale(1.0)",
-                background: "rgba(255, 255, 255, 0.3)"
+                background: "rgba(255, 255, 255, 0)"
             }
         }
       },
@@ -105,12 +105,12 @@ class App extends React.Component{
     if(skills[name].selected){
         skills[name].skillStyle = {
             transform: "scale(1.1)",
-            background: "rgba(255, 255, 255, 0.4)"
+            background: "rgba(255, 255, 255, 0)"
         }
     }else {
         skills[name].skillStyle = { 
             transform: "scale(1.0)",
-            background: "rgba(255, 255, 255, 0.3)"
+            background: "rgba(255, 255, 255, 0)"
         }
     }
 
@@ -172,7 +172,6 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
-          <Navbar data={this.state.data}/>
           <Jumbotron data={this.state.data}
           skillSelected={this.state.skillSelected}
           selectSkill={this.selectSkill}/>

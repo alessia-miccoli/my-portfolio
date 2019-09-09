@@ -34,7 +34,7 @@ label{
   overflow-x: hidden;
   width: 100vw;
   padding: 20px;
-  background-image:linear-gradient(to left, $text-info, $light-black);
+  // background-image:linear-gradient(to left, $text-info, $light-black);
 }
 
 .panel{
@@ -89,14 +89,9 @@ label{
  margin: 0;
 }
 
-.navbar{
-  // background-image: linear-gradient(45deg, $text-info, $light-black);
-  // background: $light-black;
-}
-
 #clear{
-  background-color: rgba(255,255,255,0.5);
-  background-image: linear-gradient(to right, $light, transparent);
+  // background-color: rgba(255,255,255,0.5);
+  // background-image: linear-gradient(to right, $light, transparent);
   margin: 0 35px;
   border-radius: 20px;
   padding: 5px 0;
@@ -178,7 +173,7 @@ body{
   bottom: 0;
   left: 0;
   display: flex;
-  background-image:linear-gradient(to left, $text-info, $light-black);
+  // background-image:linear-gradient(to left, $text-info, $light-black);
   flex-wrap: wrap;
   padding: 5px;
   justify-content: space-evenly;
@@ -228,8 +223,8 @@ a{
 }
 
 .skills{
-  background: rgba(255,255,255,0.3);
-  border-radius: 50%;
+  // background: rgba(255,255,255,0.1);
+  border-radius: 10px;
   padding: 15%;
   width:80px;
   height:80px;
@@ -319,6 +314,10 @@ a{
   color: $light;
 }
 
+#projects-container{
+  height: 100vh;
+}
+
 .portfolio,
 #projects, .skills-text, 
 #certifications, .ps > a, .ps, 
@@ -402,7 +401,7 @@ h2, h3{
 #separator{
   width: 100%;
   border-top: none;
-  height: 5px;
+  height: 1px;
   background-image: linear-gradient(to right, $light-black, $text-info);
 }
 

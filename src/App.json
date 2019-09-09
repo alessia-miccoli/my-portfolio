@@ -12,15 +12,6 @@
     "projects": [
       {
         "fcc": true,
-        "name": "Local Weather",
-        "imageSource": "https://i.ibb.co/MNskngD/local-weather.png",
-        "description": "Web page that shows the weather in the current location, returning it via FreeCodeCamp Api.",
-        "skills": ["HTML","CSS","jQuery"],
-        "projectUrl": "https://codepen.io/Alessia/full/MGgzxd",
-        "codeUrl": "https://codepen.io/Alessia/pen/MGgzxd?editors=0010"
-      },
-      {
-        "fcc": true,
         "name": "Pomodoro Clock",
         "imageSource": "https://i.ibb.co/hdkKF4N/pomodoro.png",
         "description": "Timer that allows to alternate study sessions and breaks.",
