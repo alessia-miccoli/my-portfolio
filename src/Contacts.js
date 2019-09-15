@@ -4,7 +4,7 @@ class Contacts extends React.Component{
     render(){
         return (
         <div id="contacts-container">
-            <h3 id="form" className="text-center">Would you like to get in touch?</h3>
+            <h3 id="form" className="text-center subtitle">Would you like to get in touch?</h3>
             <form id="contacts" className="container" onSubmit={this.props.formSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Your Name</label>

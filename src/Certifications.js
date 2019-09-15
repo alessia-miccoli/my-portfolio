@@ -11,7 +11,7 @@ class Certifications extends React.Component{
         </li>);
         return (
         <div id="certifications-container">
-            <h3 id="certifications" className="text-center">List of my certifications</h3>
+            <h3 id="certifications" className="text-center subtitle">List of my certifications</h3>
             <ul id="certification-list" className="list-group container certifications">
                 {certifications}
             </ul>

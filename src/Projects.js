@@ -8,11 +8,14 @@ class Projects extends React.Component{
             imageSource={x.imageSource} description={x.description} skills={x.skills} 
             projectUrl={x.projectUrl} codeUrl={x.codeUrl}/>)
         return (
-        <div id="projects-container">
+        <div id="projects">
 
-            <h3 id="projects" className="text-center">Here are some of my projects</h3>
-            <div className="card-deck">
-               {projects}
+            <h3 className="subtitle two-subtitle">Projects</h3>
+
+            <div id="projects-container">
+                <div className="card-deck">
+                {projects}
+                </div>
             </div>
         </div>);
     }
