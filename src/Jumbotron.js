@@ -9,14 +9,14 @@ class Jumbotron extends React.Component{
             <div id="introduction">
                 <div>
                     <h1 id="my-name">Alessia Miccoli</h1>
-                    <h4 className="subtitle main-subtitle">Aspiring Web Developer</h4>
+                    <h4 className="subtitle main-subtitle type">Aspiring Web Developer</h4>
 
                     <div id="lead-container">
                         <p className="lead" dangerouslySetInnerHTML={{__html: this.props.data.description}}/>
 
-                        <div id="CV"><a href="https://drive.google.com/open?id=1vuRvbmyH3wNirhtlzyQEJYJp8mP6FEv5" 
+                        <a id="CV" href="https://drive.google.com/open?id=1vuRvbmyH3wNirhtlzyQEJYJp8mP6FEv5" 
                     target="_blank">Go to my CV</a></div>
-                    </div>
+                    
 
                     <div id="skills-container">
                         <h3 className="subtitle one-subtitle">Skill Set</h3>
