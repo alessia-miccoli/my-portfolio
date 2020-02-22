@@ -1,15 +1,23 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.7847e02a.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.fc23e99b.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.fc23e99b.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.9defeace.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.95febd2e.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.95febd2e.chunk.js.map",
     "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
     "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
-    "static/js/2.58517254.chunk.js": "/my-portfolio/static/js/2.58517254.chunk.js",
-    "static/js/2.58517254.chunk.js.map": "/my-portfolio/static/js/2.58517254.chunk.js.map",
+    "static/js/2.34cca99c.chunk.js": "/my-portfolio/static/js/2.34cca99c.chunk.js",
+    "static/js/2.34cca99c.chunk.js.map": "/my-portfolio/static/js/2.34cca99c.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.c48273ee3dcd27ea894183e1b51257db.js": "/my-portfolio/precache-manifest.c48273ee3dcd27ea894183e1b51257db.js",
+    "precache-manifest.fd61c235b7e22708109abced54d3dfc0.js": "/my-portfolio/precache-manifest.fd61c235b7e22708109abced54d3dfc0.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.7847e02a.chunk.css.map": "/my-portfolio/static/css/main.7847e02a.chunk.css.map"
+    "static/css/main.9defeace.chunk.css.map": "/my-portfolio/static/css/main.9defeace.chunk.css.map",
+    "static/media/bootstrap.png": "/my-portfolio/static/media/bootstrap.03f98d06.png",
+    "static/media/css.png": "/my-portfolio/static/media/css.c9ad07ed.png",
+    "static/media/git.png": "/my-portfolio/static/media/git.5861abf4.png",
+    "static/media/html.png": "/my-portfolio/static/media/html.9000bc59.png",
+    "static/media/jquery.png": "/my-portfolio/static/media/jquery.82756106.png",
+    "static/media/js.png": "/my-portfolio/static/media/js.266115e1.png",
+    "static/media/react.png": "/my-portfolio/static/media/react.37fe8322.png",
+    "static/media/vue.png": "/my-portfolio/static/media/vue.8b8800e8.png"
   }
 }
