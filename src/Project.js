@@ -6,7 +6,7 @@ import Panel from './Panel';
 class Project extends React.Component{
 
     render(){
-    var skills = this.props.skills.map(x => <Badge skill={x}/>);
+    var skills = this.props.skills.map(x => <Badge skill={x} key={x}/>);
         return (
         <div className="card" id={this.props.name}>
             <Panel name={this.props.name} codeUrl={this.props.codeUrl} projectUrl={this.props.projectUrl}/>

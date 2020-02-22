@@ -38,6 +38,18 @@ class App extends React.Component{
                 background: "rgba(255, 255, 255, 0)"
             }
         },
+        "Vue": {"selected" : false, 
+            "skillStyle": { 
+              transform: "scale(1.0)",
+              background: "rgba(255, 255, 255, 0)"
+            }
+        },
+        "Vuetify": {"selected" : false, 
+            "skillStyle": { 
+              transform: "scale(1.0)",
+              background: "rgba(255, 255, 255, 0)"
+            }
+        },
         "React":  {"selected" : false, 
             "skillStyle": { 
                 transform: "scale(1.0)",

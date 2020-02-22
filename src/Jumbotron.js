@@ -15,7 +15,7 @@ class Jumbotron extends React.Component{
                         <p className="lead" dangerouslySetInnerHTML={{__html: this.props.data.description}}/>
 
                         <a id="CV" href="https://drive.google.com/open?id=1vuRvbmyH3wNirhtlzyQEJYJp8mP6FEv5" 
-                    target="_blank">Go to my CV</a></div>
+                    target="_blank" rel="noopener noreferrer">Go to my CV</a></div>
                     
 
                     <div id="skills-container">
@@ -27,10 +27,10 @@ class Jumbotron extends React.Component{
 
                 <nav className="links">
                     <ul>
-                        <li className="link"><a href="#projects-container"><i className="fas fa-laptop-code"></i> Projects</a></li>
-                        <li className="link"><a  href="#certifications-container"><i className="fas fa-certificate"></i> Certifications</a></li>
-                        <li className="link"><a  href="#articles-container"><i className="fas fa-pen-nib"></i> Articles</a></li>
-                        <li className="link"><a  href="#form"><i className="fas fa-envelope"></i> Contacts</a></li>
+                        <li className="link"><a href="#projects-container"><h4><i className="fas fa-laptop-code"></i> Projects</h4></a></li>
+                        <li className="link"><a  href="#certifications-container"><h4><i className="fas fa-certificate"></i> Certifications</h4></a></li>
+                        <li className="link"><a  href="#articles-container"><h4><i className="fas fa-pen-nib"></i> Articles</h4></a></li>
+                        <li className="link"><a  href="#form"><h4><i className="fas fa-envelope"></i> Contacts</h4></a></li>
                     </ul>
                 </nav>
             </div> 

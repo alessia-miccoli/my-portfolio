@@ -166,7 +166,6 @@ nav ul{
 
 .card-deck{
   display: flex;
-  justify-content: center;
   height: 100%;
   padding: 2vw;
   padding-top: 0;
@@ -182,6 +181,7 @@ nav ul{
 .card{
   min-width: 28%!important;
   margin: 2vw 1vw;
+  max-width: 30vw;
 }
 
 #projects-container{
@@ -191,8 +191,6 @@ nav ul{
 #projects{
   background-color: $gray;
   padding-top: 2vh;
-  align-items: stretch;
-  height: 100vh;
 }
 
 .two-subtitle{
@@ -205,6 +203,7 @@ nav ul{
 .badge-container{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .badge-container > div{
@@ -364,12 +363,13 @@ textarea:focus{
 
 /* Media Query*/
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
 
   .card-deck{
     justify-content: center!important;
+    width: 100vw;
   }
-
+  
   #projects-container{
     height: auto;
   }
@@ -461,7 +461,6 @@ textarea:focus{
 
   .card *{
     max-width: 100%!important; 
-    // padding: 0 10vw;
   }
 
   .card-title{

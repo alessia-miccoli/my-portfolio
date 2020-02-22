@@ -1,19 +1,28 @@
 {
-    "description" : "Computer Engineering Student @Polytechnic University of Turin.<br><br>From 2017 to the beginning of 2019 I took a pause from my studies and moved to Ireland, where I started working, lately as a Web Implementation Specialist for the Google Tag Team in Dublin. This January I decided to come back to Italy in order to complete my studies (at the moment I've got only 2 exams left).<br><br>In my spare time I enjoy taking online programming courses and writing about what I've learned. I'm really passionate about development, web development in particular.",
+    "description" : "Hi, my name is Alessia.<br/> I'll graduate in Computer Engineering @Polytechnic University of Turin this March.<br><br>From 2017 to the beginning of 2019 I took a pause from my studies and moved to Ireland, where I started working, lately as a Web Implementation Specialist for the Google Tag Team in Dublin. Last January I decided to come back to Italy in order to complete my studies. In the last months of University I worked as a Front End Developer (Vue.js).<br><br>In my spare time I enjoy taking online programming courses and writing about what I've learned. I'm really passionate about development, web development in particular.",
     "skills": {
-      "HTML": "https://i.ibb.co/qBsdVPs/html-512px.png",
-      "CSS": "https://i.ibb.co/ThKCTsS/css-512px.png",
-      "JavaScript": "https://i.ibb.co/tMySwHc/js-512.png",
+      "HTML": "../src/assets/html.png",
+      "CSS": "../src/assets/html.png",
+      "JavaScript": "../assets/html.png",
+      "Vue" : "/assets/html.png",
+      "Vuetify" : "/assets/html.png",
       "React": "https://cdn.auth0.com/blog/react-js/react.png",
-      "jQuery": "https://abeon-hosting.com/images/jquery-logo-png-2.png",
+      "jQuery": "https://banner2.cleanpng.com/20180704/zoa/kisspng-jquery-ui-javascript-web-browser-pasargad-5b3d093837a4d4.5712269815307267122279.jpg",
       "Bootstrap": "https://i.ibb.co/wsmGyzy/bootrastrap-512.png",
       "Git" : "http://shijuvarghese.com/wp-content/uploads/2018/03/git-logo.png"
     },
     "projects": [
       {
+        "fcc": false,
+        "name": "Magic Ball",
+        "description": "Classic 8 ball that answer to your \"yes\" or \"no\" questions.",
+        "skills": ["HTML","CSS","React", "Git", "Firebase", "REST api"],
+        "projectUrl": "https://alessia-miccoli.github.io/magic-ball/",
+        "codeUrl": "https://github.com/alessia-miccoli/magic-ball"
+      },
+      {
         "fcc": true,
         "name": "Pomodoro Clock",
-        "imageSource": "https://i.ibb.co/hdkKF4N/pomodoro.png",
         "description": "Timer that allows to alternate study sessions and breaks.",
         "skills": ["HTML","CSS","React"],
         "projectUrl": "https://codepen.io/Alessia/full/YbYjzo",
@@ -22,7 +31,6 @@
       {
         "fcc": true,
         "name": "Drum Machine",
-        "imageSource": "https://i.ibb.co/6y6s7SK/drum-machine.png",
         "description": "Drum pads that can be played with the mouse or the keyboard, the name of the track played is shown on a display.",
         "skills": ["HTML","CSS","React"],
         "projectUrl": "https://codepen.io/Alessia/full/rbNBrE",
@@ -31,7 +39,6 @@
       {
         "fcc": true,
         "name": "React Calculator",
-        "imageSource": "https://i.ibb.co/wNkRTzH/calcolatrice.png",
         "description": "Calculator that handles the 4 standard operations (sum, subtraction, division, multiplication) for both integers and floating-point numbers.",
         "skills": ["HTML","CSS","React"],
         "projectUrl": "https://codepen.io/Alessia/full/GLwLgp",
@@ -40,7 +47,6 @@
       {
         "fcc": true,
         "name": "Random Quote Machine",
-        "imageSource": "https://i.ibb.co/6XBknV8/random-quote.png",
         "description": "Web page that returns via API from 'Quotes on Design' a series of random quotes. They can be shared on Twitter clicking on the related Button.",
         "skills": ["HTML","CSS","jQuery"],
         "projectUrl": "https://codepen.io/Alessia/full/aYPoPK",
@@ -49,7 +55,6 @@
       {
         "fcc": true,
         "name": "Markdown Previewer",
-        "imageSource": "https://i.ibb.co/BgJWmYK/markdown.png",
         "description": "Responsive web page that allow to Markdown the content inserted in the editor and visualize it in the Preview Container.",
         "skills": ["HTML","CSS","React","Marked.js"],
         "projectUrl": "https://codepen.io/Alessia/full/aMgJOX",
@@ -58,7 +63,6 @@
       {
         "fcc": false,
         "name": "100",
-        "imageSource": "https://i.ibb.co/jfFzT70/100.png",
         "description": "This was my first project. I tried to replicate a game that my father plays on paper.",
         "skills": ["HTML","CSS","JavaScript","Git"],
         "projectUrl": "http://100-game.azurewebsites.net/",
@@ -68,8 +72,7 @@
     "articles": {
         "How to create a responsive Navigation Bar with HTML, CSS and jQuery — step by step tutorial": "https://itnext.io/how-to-create-a-responsive-navigation-bar-with-html-css-and-jquery-step-by-step-tutorial-9c780b58479f?source=friends_link&sk=af69e81f2c521dc9cbb34cfc1aad8174",
         "Regular Expressions (RegEx) and How to use them in JavaScript — with simple examples": "https://itnext.io/regular-expressions-regex-and-how-to-use-them-in-javascript-with-simple-examples-733a27f0717c?source=friends_link&sk=f747f50fadf63d86e221454ecf2605e5",
-        "How to create a Twitter Inspired Character Counter with an SVG Progress Ring using React": "https://itnext.io/how-to-create-a-twitter-inspired-character-counter-with-an-svg-progress-ring-react-js-352f3c8eefbc?source=friends_link&sk=502b793d1c5d788b8762dd296a002d48",
-        "How to make a form work without back end (with EmailJS)" : "https://medium.com/@alessiamiccoli/how-to-make-a-form-work-without-back-end-with-emailjs-fc956fe371d4?source=friends_link&sk=20fcbe4a7283427571aa029855000d2d"
+        "How to create a Twitter Inspired Character Counter with an SVG Progress Ring using React": "https://itnext.io/how-to-create-a-twitter-inspired-character-counter-with-an-svg-progress-ring-react-js-352f3c8eefbc?source=friends_link&sk=502b793d1c5d788b8762dd296a002d48"
     },
     "certifications": {
       "Responsive Web Design":       
