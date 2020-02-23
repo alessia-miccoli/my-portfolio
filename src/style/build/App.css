@@ -162,6 +162,12 @@ nav ul {
   align-items: center;
 }
 
+.card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .card {
   min-width: 28% !important;
   margin: 2vw 1vw;
@@ -329,11 +335,6 @@ textarea:focus {
   color: #F9F9F9;
 }
 
-.card-footer {
-  padding: 0;
-  width: 100vw;
-}
-
 /* Other */
 .btn.focus, .btn:focus {
   box-shadow: none;
@@ -341,13 +342,12 @@ textarea:focus {
 
 /* Media Query*/
 @media only screen and (max-width: 600px) {
-  .card-deck {
-    justify-content: center !important;
-    width: 100vw;
-  }
-
   #projects-container {
     height: auto;
+  }
+
+  .card {
+    max-width: 100vw;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -433,16 +433,7 @@ textarea:focus {
     margin-bottom: 3vh;
   }
 
-  .card * {
-    max-width: 100% !important;
-  }
-
-  .card-title {
-    font-size: 3vh;
-  }
-
-  .card-text,
-.form-control {
+  .form-control {
     font-size: 2vh;
   }
 
@@ -475,11 +466,6 @@ textarea:focus {
   .skills {
     width: 12vw;
     height: 5vw;
-  }
-
-  .card {
-    height: 25vh;
-    font-size: 3vh;
   }
 
   .panel * {

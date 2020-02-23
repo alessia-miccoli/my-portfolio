@@ -13,15 +13,11 @@ class Jumbotron extends React.Component{
 
                     <div id="lead-container">
                         <p className="lead" dangerouslySetInnerHTML={{__html: this.props.data.description}}/>
-
-                        <a id="CV" href="https://drive.google.com/open?id=1vuRvbmyH3wNirhtlzyQEJYJp8mP6FEv5" 
-                    target="_blank" rel="noopener noreferrer">Go to my CV</a></div>
+                    </div>
                     
-
                     <div id="skills-container">
                         <h3 className="subtitle one-subtitle">Skill Set</h3>
-                        <Skills data={this.props.data}
-                            skillSelected={this.props.skillSelected} selectSkill={this.props.selectSkill}/>
+                        <Skills data={this.props.data}/>
                     </div>
                 </div>
 

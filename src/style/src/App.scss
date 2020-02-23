@@ -178,6 +178,12 @@ nav ul{
   align-items: center;
 }
 
+.card-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .card{
   min-width: 28%!important;
   margin: 2vw 1vw;
@@ -349,10 +355,10 @@ textarea:focus{
   color: $white;
 }
 
-.card-footer{
-  padding: 0;
-  width: 100vw; 
-}
+// .card-footer{
+//   padding: 0;
+//   width: 100%; 
+// }
 
 /* Other */
 
@@ -364,14 +370,13 @@ textarea:focus{
 /* Media Query*/
 
 @media only screen and (max-width: 600px) {
-
-  .card-deck{
-    justify-content: center!important;
-    width: 100vw;
-  }
   
   #projects-container{
     height: auto;
+  }
+
+  .card{
+    max-width: 100vw;
   }
 }
 
@@ -459,15 +464,15 @@ textarea:focus{
     margin-bottom: 3vh;
   }
 
-  .card *{
-    max-width: 100%!important; 
-  }
+  // .card *{
+  //   max-width: 100%!important; 
+  // }
 
-  .card-title{
-    font-size: 3vh;
-  }
+  // .card-title{
+  //   font-size: 3vh;
+  // }
 
-  .card-text, 
+  // .card-text, 
   .form-control{
     font-size: 2vh;
   }
@@ -504,10 +509,11 @@ textarea:focus{
 
   }
 
-  .card{
-    height: 25vh;
-    font-size: 3vh;
-  }
+  // .card{
+  //   height: 25vh;
+  //   font-size: 3vh;
+  //   max-width: 100vw;
+  // }
 
   .panel *{
     font-size: 2.5vh;

@@ -14,7 +14,7 @@ class Projects extends React.Component{
 
             <div id="projects-container">
                 <div className="card-deck">
-                {projects}
+                    {projects}
                 </div>
             </div>
         </div>);

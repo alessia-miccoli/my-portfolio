@@ -13,7 +13,6 @@
     },
     "projects": [
       {
-        "fcc": false,
         "name": "Magic Ball",
         "description": "Classic 8 ball that answer to your \"yes\" or \"no\" questions.",
         "skills": ["HTML","CSS","React", "Git", "Firebase", "REST api"],
@@ -21,7 +20,6 @@
         "codeUrl": "https://github.com/alessia-miccoli/magic-ball"
       },
       {
-        "fcc": true,
         "name": "Pomodoro Clock",
         "description": "Timer that allows to alternate study sessions and breaks.",
         "skills": ["HTML","CSS","React"],
@@ -29,7 +27,6 @@
         "codeUrl": "https://codepen.io/Alessia/pen/YbYjzo"
       },
       {
-        "fcc": true,
         "name": "Drum Machine",
         "description": "Drum pads that can be played with the mouse or the keyboard, the name of the track played is shown on a display.",
         "skills": ["HTML","CSS","React"],
@@ -37,7 +34,6 @@
         "codeUrl": "https://codepen.io/Alessia/pen/rbNBrE?editors=0010"
       },
       {
-        "fcc": true,
         "name": "React Calculator",
         "description": "Calculator that handles the 4 standard operations (sum, subtraction, division, multiplication) for both integers and floating-point numbers.",
         "skills": ["HTML","CSS","React"],
@@ -45,7 +41,6 @@
         "codeUrl": "https://codepen.io/Alessia/pen/GLwLgp"
       },
       {
-        "fcc": true,
         "name": "Random Quote Machine",
         "description": "Web page that returns via API from 'Quotes on Design' a series of random quotes. They can be shared on Twitter clicking on the related Button.",
         "skills": ["HTML","CSS","jQuery"],
@@ -53,7 +48,6 @@
         "codeUrl": "https://codepen.io/Alessia/pen/aYPoPK?editors=0010"
       },
       {
-        "fcc": true,
         "name": "Markdown Previewer",
         "description": "Responsive web page that allow to Markdown the content inserted in the editor and visualize it in the Preview Container.",
         "skills": ["HTML","CSS","React","Marked.js"],
@@ -61,7 +55,6 @@
         "codeUrl": "https://codepen.io/Alessia/pen/aMgJOX?editors=0010"
       },
       {
-        "fcc": false,
         "name": "100",
         "description": "This was my first project. I tried to replicate a game that my father plays on paper.",
         "skills": ["HTML","CSS","JavaScript","Git"],
@@ -75,21 +68,25 @@
         "How to create a Twitter Inspired Character Counter with an SVG Progress Ring using React": "https://itnext.io/how-to-create-a-twitter-inspired-character-counter-with-an-svg-progress-ring-react-js-352f3c8eefbc?source=friends_link&sk=502b793d1c5d788b8762dd296a002d48"
     },
     "certifications": {
-      "Responsive Web Design":       
-        {"link": "https://www.freecodecamp.org/certification/alessia-miccoli/responsive-web-design",
+      "Responsive Web Design": {
+        "link": "https://www.freecodecamp.org/certification/alessia-miccoli/responsive-web-design",
         "date": "September 7, 2018",
-        "by" : "FreeCodeCamp"},
-      "JavaScript Algorithms and Data Structures": 
-        { "link": "https://www.freecodecamp.org/certification/alessia-miccoli/javascript-algorithms-and-data-structures",
-          "date": "February 19, 2019",
-          "by" : "FreeCodeCamp"},
-      "PHP Tutorial Course": 
-        {"link" : "https://www.sololearn.com/Certificate/1059-13851495/pdf/",
-          "date" : "07 May, 2019",
-          "by" : "SoloLearn"},
-      "Front End Libraries": 
-        {"link" : "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries",
-          "date": "May 24, 2019",
-          "by" : "FreeCodeCamp"}
+        "by" : "FreeCodeCamp"
+      },
+      "JavaScript Algorithms and Data Structures": {
+        "link": "https://www.freecodecamp.org/certification/alessia-miccoli/javascript-algorithms-and-data-structures",
+        "date": "February 19, 2019",
+        "by" : "FreeCodeCamp"
+      },
+      "PHP Tutorial Course": {
+        "link" : "https://www.sololearn.com/Certificate/1059-13851495/pdf/",
+        "date" : "07 May, 2019",
+        "by" : "SoloLearn"
+      },
+      "Front End Libraries": {
+        "link" : "https://www.freecodecamp.org/certification/alessia-miccoli/front-end-libraries",
+        "date": "May 24, 2019",
+        "by" : "FreeCodeCamp"
       }
+    }
   }
