@@ -121,6 +121,10 @@ nav ul{
   margin: 10% 0;
 }
 
+h4{
+  font-size: 1.2rem;
+}
+
 .link:hover{
   transition: 1s ease;
   color: $black!important;
@@ -135,7 +139,7 @@ nav ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 3vw;
+  padding-left: 2vw;
   height: 100%;
 }
 
@@ -349,16 +353,17 @@ textarea:focus{
   margin: 0;
   color: $white;
   background-color: $blue;
+  width: 100vw;
 }
 
 #footer .fab{
   color: $white;
 }
 
-// .card-footer{
-//   padding: 0;
-//   width: 100%; 
-// }
+.credits{
+  padding: 0;
+  width: 100vw;
+}
 
 /* Other */
 
@@ -491,7 +496,6 @@ textarea:focus{
 
   .list-group-item a{
     font-size: 2.5vh;
-    padding-left: 2%;
     margin-left: 2%;
   }
 
@@ -563,7 +567,7 @@ textarea:focus{
   }
 
   to{
-    padding-left: 2%;
+    padding-left: 0;
     padding-right: 2%;
   }
 }
