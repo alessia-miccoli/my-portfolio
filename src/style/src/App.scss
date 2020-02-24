@@ -162,7 +162,6 @@ nav ul{
 }
 
 .skills{
-  max-width: 4vw;
   margin-bottom: 2vh;
 }
 
@@ -376,16 +375,41 @@ textarea:focus{
 
 @media only screen and (max-width: 600px) {
   
+  .panel button{
+    height: 7vh;
+    display: flex;
+  }
+
+  .badge-pill {
+    font-size: 2vh;
+  }
+
   #projects-container{
     height: auto;
   }
 
+  .card-title b{
+    font-size: large;
+  }
+
+  .card-text{
+    font-size: medium;
+  }
+
   .card{
     max-width: 100vw;
+    height: 30vh;
   }
 }
 
 @media only screen and (max-width: 800px) {
+  .link{
+    padding: 10px;
+  }
+
+  h4 {
+    font-size: large;
+  }
 
   #introduction{
     flex-direction: column;
@@ -482,10 +506,6 @@ textarea:focus{
     font-size: 2vh;
   }
 
-  .badge-pill{
-    font-size: 1.5vh;
-  }
-
   #certification-list{
     padding-right: 0;
   }
@@ -507,11 +527,10 @@ textarea:focus{
     height: auto;
   }
 
-  .skills{
-    width: 12vw;
-    height: 5vw;
-
-  }
+  // .skills{
+  //   width: 12vw;
+  //   height: 5vw;
+  // }
 
   // .card{
   //   height: 25vh;
@@ -548,6 +567,11 @@ textarea:focus{
 
 }
 
+@media only screen and (min-width: 800px) {
+  .skills{
+    max-width: 4vw;
+  }
+}
 /* Animations */
 
 @keyframes fadeIn{
