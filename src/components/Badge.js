@@ -4,9 +4,8 @@ class Badge extends React.Component{
 
     render(){
         return (
-        <div>
-            <span className="badge badge-pill">{this.props.skill}</span>
-        </div>);
+        <span className="blue-text">{this.props.skill}</span>
+        );
     }
 }
 

@@ -58,15 +58,17 @@ class App extends React.Component{
       };
 
       emailjs.send('gmail', 'template_xOTwPgwc', templateParams, 'user_NT7ftcejhxZleQsYuCo9f')
-        .then(response => {
-          if(response.status === 200){
+        .then(() => {
             this.setState({thankYouMessageVisibility : true
-            });
-          }else{
-            this.setState({errorMessageVisibility : true
-            });
-          }
-          
+          });
+          this.setState({
+            name : "",
+            email : "",
+            message : ""
+          });
+        }).catch(()=>{
+          this.setState({errorMessageVisibility : true
+          });
           this.setState({
             name : "",
             email : "",
@@ -78,6 +80,7 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
+          <button id="back-to-about" className="btn"><a href="#about"><i className="fas fa-arrow-up"></i></a></button>
           <Jumbotron data={this.state.data}/>
           <Projects data={this.state.data}/>
           <Certifications data={this.state.data}/>

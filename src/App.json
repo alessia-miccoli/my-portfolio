@@ -1,17 +1,25 @@
 {
-    "description" : "Hi, my name is Alessia.<br/> I'll graduate in Computer Engineering @Polytechnic University of Turin this March.<br><br>From 2017 to the beginning of 2019 I took a pause from my studies and moved to Ireland, where I started working, lately as a Web Implementation Specialist for the Google Tag Team in Dublin. Last January I decided to come back to Italy in order to complete my studies. In the last months of University I worked as a Front End Developer (Vue.js).<br><br>In my spare time I enjoy taking online programming courses and writing about what I've learned. I'm really passionate about development, web development in particular.",
-    "skills": {
-      "HTML": "../src/assets/html.png",
-      "CSS": "../src/assets/html.png",
-      "JavaScript": "../assets/html.png",
-      "Vue" : "/assets/html.png",
-      "Vuetify" : "/assets/html.png",
-      "React": "https://cdn.auth0.com/blog/react-js/react.png",
-      "jQuery": "https://banner2.cleanpng.com/20180704/zoa/kisspng-jquery-ui-javascript-web-browser-pasargad-5b3d093837a4d4.5712269815307267122279.jpg",
-      "Bootstrap": "https://i.ibb.co/wsmGyzy/bootrastrap-512.png",
-      "Git" : "http://shijuvarghese.com/wp-content/uploads/2018/03/git-logo.png"
-    },
+    "description" : "Computer Engineering Graduate.<br/> Passionate about Web Development, Front End Development in particular.<br/>Parrots lover.",
+    "skills": [
+      {"HTML": "html.png"},
+      {"CSS": "css.png"},
+      {"JavaScript": "js.png"},
+      {"Vue" : "vue.png"},
+      {"Vuetify" : "vuetify.png"},
+      {"React": "react.png"},
+      {"jQuery": "jquery.png"},
+      {"Bootstrap": "bootstrap.png"},
+      {"Sass" : "sass.png"},
+      {"Git" : "git.png"}
+    ],
     "projects": [
+      {
+        "name": "FantaWiz",
+        "description": "Front End part of a Web app for Italian Fantasy Football players. The app shows data scraped from Italian sport websites that give predictions about which Serie A players might play or might staying in bench. It also shows who is disqualified or injured.",
+        "skills": ["Vue.js","Vuex","Vuetify", "Git", "REST api"],
+        "projectUrl": "https://fantawiz.herokuapp.com/",
+        "codeUrl": "https://github.com/vittoriovaselli/FantaWiz"
+      },
       {
         "name": "Magic Ball",
         "description": "Classic 8 ball that answer to your \"yes\" or \"no\" questions.",

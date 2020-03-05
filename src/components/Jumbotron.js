@@ -1,35 +1,34 @@
 import React from 'react';
 import Skills from './Skills';
+import data from '../App.json';
+
 
 class Jumbotron extends React.Component{
 
     render(){
         return (
-        <div  id="about" className="jumbotron">
-            <div id="introduction">
+        <div className="jumbotron">
+            <div id="about">
                 <div>
                     <h1 id="my-name">Alessia Miccoli</h1>
-                    <h4 className="subtitle main-subtitle type">Aspiring Web Developer</h4>
-
-                    <div id="lead-container">
-                        <p className="lead" dangerouslySetInnerHTML={{__html: this.props.data.description}}/>
-                    </div>
-                    
-                    <div id="skills-container">
-                        <h3 className="subtitle one-subtitle">Skill Set</h3>
-                        <Skills data={this.props.data}/>
-                    </div>
+                    <h4 className="subtitle main-subtitle type">Portfolio</h4>
                 </div>
 
-                <nav className="links">
-                    <ul>
-                        <li className="link"><a href="#projects-container"><h4><i className="fas fa-laptop-code"></i> Projects</h4></a></li>
-                        <li className="link"><a  href="#certifications-container"><h4><i className="fas fa-certificate"></i> Certifications</h4></a></li>
-                        <li className="link"><a  href="#articles-container"><h4><i className="fas fa-pen-nib"></i> Articles</h4></a></li>
-                        <li className="link"><a  href="#form"><h4><i className="fas fa-envelope"></i> Contacts</h4></a></li>
-                    </ul>
-                </nav>
-            </div> 
+                <p dangerouslySetInnerHTML={{__html: this.props.data.description}}/>
+                
+                <Skills data={data}/>
+            </div>
+
+            <nav className="navigation-bar">
+                <ul>
+                    <li className="link"><a href="#projects-container"><h4><i className="fas fa-laptop-code"></i> Projects</h4></a></li>
+                    <li className="link"><a  href="#certifications-container"><h4><i className="fas fa-certificate"></i> Certifications</h4></a></li>
+                    <li className="link"><a  href="#articles-container"><h4><i className="fas fa-pen-nib"></i> Articles</h4></a></li>
+                    <li className="link"><a  href="#form"><h4><i className="fas fa-envelope"></i> Contacts</h4></a></li>
+                </ul>
+            </nav>
+
+
 
         </div>);
     }
