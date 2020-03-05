@@ -1,0 +1,63 @@
+@media only screen and (max-width: $breakpoint-phone) {
+    #cards-container{
+      flex-direction: column;
+      justify-content: space-around;
+      .card{
+        width: 100%;
+        max-width: 100%;
+        margin: 20px 0;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: $breakpoint-phone) and (max-width: $breakpoint-tablet) {
+    .jumbotron{
+      flex-direction: column;
+      margin: 0;
+      padding: 20px;
+    }
+  
+    #about,
+    .jumbotron,
+    .navigation-bar{
+      width: 100%;
+      margin:0;
+    }
+  
+    .navigation-bar{
+      margin-top: 20px;
+      height: 10%;
+    }
+  
+    .link{
+      align-self: center;
+    }
+  
+    #about{
+      height: 90%;
+    }
+  
+    #skills-container{
+      flex-direction: row;
+      .skill{
+        width: 1.2rem;
+        margin: 0;
+      }
+    }
+  
+    .navigation-bar ul{
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    #cards-container{
+      justify-content: space-evenly;
+  
+      .card{
+        width: 45%;
+        margin: 0 0 20px 0;
+        max-width: 45%;
+      }
+    }
+  }

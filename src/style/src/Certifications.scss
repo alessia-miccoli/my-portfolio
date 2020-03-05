@@ -1,0 +1,32 @@
+#certification-list{
+  padding: 0;
+  li + li{
+    margin-top: 20px;
+  }
+
+  li{
+    background-color: $white;
+    border-radius: 0;
+    border: 0;
+  }
+}
+
+.certifications{
+  a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $blue;
+    &:hover{
+      color: $black;
+      transition: 1s ease;
+    }
+  } 
+}
+
+.date, .by{
+  margin-bottom: 0;
+}
+
+.by{
+  color: $light-blue;
+}

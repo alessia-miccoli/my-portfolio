@@ -1,0 +1,13 @@
+.skill {
+  width: 2rem;
+  margin: 1rem;
+  animation: rotate 5s linear;
+  animation-iteration-count: 1;
+}
+
+#skills-container{
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-around;
+}
