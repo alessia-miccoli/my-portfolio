@@ -14,6 +14,18 @@
   }
 }
 
+#portfolio-link{
+  text-decoration: none;
+  h4{
+    visibility: hidden;
+    animation-delay: 2s!important;
+    animation: fadeIn 2s forwards;
+    &:hover{
+      color: $black;
+    }
+  }
+}
+
 .jumbotron{
   padding: 0;
   margin: 0;
@@ -59,7 +71,7 @@
   list-style-type: none;
 }
 
-#my-name, .subtitle{
+.title, .main-subtitle{
   font-family: $font2;
   letter-spacing: 3px;
 }

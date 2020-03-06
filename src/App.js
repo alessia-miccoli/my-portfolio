@@ -80,20 +80,24 @@ class App extends React.Component{
   render(){
     return (
       <div className="App">
-          <button id="back-to-about" className="btn"><a href="#about"><i className="fas fa-arrow-up"></i></a></button>
-          <Jumbotron data={this.state.data}/>
-          <Projects data={this.state.data}/>
-          <Certifications data={this.state.data}/>
-          <Articles data={this.state.data}/>
-          <Contacts name={this.state.name}
-            message={this.state.message}
-            email={this.state.email}
-            formSubmit={this.formSubmit} 
-            handleChange={this.handleChange}
-            thankYouMessageVisibility={this.state.thankYouMessageVisibility}
-            errorMessageVisibility={this.state.errorMessageVisibility}
-            spinnerVisibility={this.state.spinnerVisibility}/>
-          <Footer/>
+        <a href="#about">
+          <button id="back-to-about" className="btn">
+            <i className="fas fa-arrow-up"></i>
+          </button>
+        </a>
+        <Jumbotron data={this.state.data}/>
+        <Projects data={this.state.data}/>
+        <Certifications data={this.state.data}/>
+        <Articles data={this.state.data}/>
+        <Contacts name={this.state.name}
+          message={this.state.message}
+          email={this.state.email}
+          formSubmit={this.formSubmit} 
+          handleChange={this.handleChange}
+          thankYouMessageVisibility={this.state.thankYouMessageVisibility}
+          errorMessageVisibility={this.state.errorMessageVisibility}
+          spinnerVisibility={this.state.spinnerVisibility}/>
+        <Footer/>
       </div>
     );
   }

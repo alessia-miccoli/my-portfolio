@@ -10,8 +10,8 @@ class Jumbotron extends React.Component{
     <div className="jumbotron">
       <div id="about">
         <div>
-          <h1 id="my-name">Alessia Miccoli</h1>
-          <h4 className="subtitle main-subtitle type">Portfolio</h4>
+          <h1 className="title">Alessia Miccoli</h1>
+          <a id="portfolio-link" target="_blank" rel="noopener noreferrer" href="https://github.com/alessia-miccoli/my-portfolio"><h4 className="main-subtitle"><i className="fab fa-github"></i> Portfolio</h4></a>
         </div>
 
         <p dangerouslySetInnerHTML={{__html: this.props.data.description}}/>

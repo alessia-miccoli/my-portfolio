@@ -1,11 +1,10 @@
 @keyframes fadeIn{
   0% { 
-    visibility: visible; 
-    color: transparent
+    color: transparent;
   }
   100% { 
     visibility: visible;
-    color: $blue
+    color: $blue;
   }
 }
 

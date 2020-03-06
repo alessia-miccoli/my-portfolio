@@ -1,6 +1,4 @@
 @import './_variables';
-@import './_media-queries';
-@import './_animations';
 @import './About.scss';
 @import './Articles.scss';
 @import './Certifications.scss';
@@ -8,7 +6,8 @@
 @import './Footer.scss';
 @import './Projects.scss';
 @import './Skills.scss';
-
+@import './_media-queries';
+@import './_animations';
 
 //html, body 
 * {
@@ -29,6 +28,9 @@ body{
 
 h3{
   text-align: center;
+  font-size: 2rem;
+  color: $black;
+  font-family: $font2;
 }
 
 .blue-text{
@@ -49,14 +51,7 @@ h3{
 #back-to-about{
   z-index: 3;
   background-color: $black;
-  a{
-    height: 100%;
-    width: 100%;
-    color: $white;
-  }
-  .fab{
-    color: $white;
-  }
+  color: $white;
   position: fixed;
   bottom: 20px;
   right: 20px;
