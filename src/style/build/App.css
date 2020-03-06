@@ -194,10 +194,15 @@ textarea:focus {
   font-size: 1.2rem;
 }
 
+.blue-text {
+  color: #157DC6;
+  font-weight: 600;
+}
+
 .card-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .panel button {
@@ -299,7 +304,7 @@ textarea:focus {
   }
 
   #cards-container {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   #cards-container .card {
     width: 48%;
@@ -309,7 +314,7 @@ textarea:focus {
 }
 @media only screen and (max-width: 600px) {
   #cards-container {
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   #cards-container .card {
     width: 100%;
@@ -366,11 +371,6 @@ h3 {
   font-size: 2rem;
   color: #2D3142;
   font-family: "Gayathri", sans-serif;
-}
-
-.blue-text {
-  color: #157DC6;
-  font-weight: 600;
 }
 
 .btn {
