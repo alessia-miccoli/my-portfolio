@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.bb21246b.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.c97e751c.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.c97e751c.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.d190a65f.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.bce44e56.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.bce44e56.chunk.js.map",
     "runtime~main.js": "/my-portfolio/static/js/runtime~main.674e5ed7.js",
     "runtime~main.js.map": "/my-portfolio/static/js/runtime~main.674e5ed7.js.map",
-    "static/js/2.5e6c6025.chunk.js": "/my-portfolio/static/js/2.5e6c6025.chunk.js",
-    "static/js/2.5e6c6025.chunk.js.map": "/my-portfolio/static/js/2.5e6c6025.chunk.js.map",
+    "static/js/2.8021eab4.chunk.js": "/my-portfolio/static/js/2.8021eab4.chunk.js",
+    "static/js/2.8021eab4.chunk.js.map": "/my-portfolio/static/js/2.8021eab4.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.d5fd8a6c81c62793d31572783f8a282b.js": "/my-portfolio/precache-manifest.d5fd8a6c81c62793d31572783f8a282b.js",
+    "precache-manifest.ca28fa7fccde56d685fbc382c98c4665.js": "/my-portfolio/precache-manifest.ca28fa7fccde56d685fbc382c98c4665.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.bb21246b.chunk.css.map": "/my-portfolio/static/css/main.bb21246b.chunk.css.map",
+    "static/css/main.d190a65f.chunk.css.map": "/my-portfolio/static/css/main.d190a65f.chunk.css.map",
     "static/media/bootstrap.png": "/my-portfolio/static/media/bootstrap.03f98d06.png",
     "static/media/css.png": "/my-portfolio/static/media/css.c9ad07ed.png",
     "static/media/git.png": "/my-portfolio/static/media/git.5861abf4.png",
@@ -18,6 +18,7 @@
     "static/media/jquery.png": "/my-portfolio/static/media/jquery.82756106.png",
     "static/media/js.png": "/my-portfolio/static/media/js.266115e1.png",
     "static/media/react.png": "/my-portfolio/static/media/react.37fe8322.png",
+    "static/media/sass.png": "/my-portfolio/static/media/sass.995403f2.png",
     "static/media/vue.png": "/my-portfolio/static/media/vue.8b8800e8.png"
   }
 }
