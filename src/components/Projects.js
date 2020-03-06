@@ -9,7 +9,7 @@ class Projects extends React.Component{
         projectUrl={x.projectUrl} codeUrl={x.codeUrl}/>)
     return (
     <div id="projects-section">
-      <h3 className="subtitle two-subtitle">Projects</h3>
+      <h3 className="subtitle">Projects</h3>
 
       <div id="projects-container">
         <div id="cards-container">
